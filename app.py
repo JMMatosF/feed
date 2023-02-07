@@ -1,10 +1,10 @@
-from flask import Flask, request
 import webbrowser
-from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom import minidom
-import shopify
+from xml.etree.ElementTree import Element, SubElement, tostring
 import requests
+import shopify
 from bs4 import BeautifulSoup
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -22,7 +22,7 @@ def generate_feed():
 def main():
     # Shopify API credentials
     tag = "Clementoni"
-    shop_url = "https://abc-escolar.myshopify.com"
+    # shop_url = "https://abc-escolar.myshopify.com"
     api_key = "532e586c6a52981c06caa7eeec38ee8c"
     access_token = "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"
     password = "79686ebe8e57a554f1c0d89ddf8503a5"
@@ -30,8 +30,8 @@ def main():
         "Content-Type": "application/json",
         "X-Shopify-Access-Token": access_token
     }
-    shopify.ShopifyResource.set_site(shop_url)
-    products_url = f"{shop_url}/admin/products.json"
+    shopify.ShopifyResource.set_site("https://abc-escolar.myshopify.com")
+    products_url = f"https://abc-escolar.myshopify.com/admin/products.json"
     response = requests.get(products_url, auth=(api_key, password), headers=headers)
     # data = response.json()
     page = 1
