@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+ <product>
+  <upc_ean>67163</upc_ean>
+  <reference>67163</reference>
+  <brand>Clementoni</brand>
+  <category>jogos didaticos</category>
+  <designation>Masterchef - clementoni</designation>
+  <regular_price>17.00€</regular_price>
+  <current_price/>
+  <availability>in stock</availability>
+  <stock>5</stock>
+  <norma_shipping_cost>5.00€</norma_shipping_cost>
+  <min_delivery_time>1 dia</min_delivery_time>
+  <max_delivery_time>5 dia</max_delivery_time>
+  <product_url>https://abcescolar.pt/products/masterchef-clementoni</product_url>
+  <description>Este jogo foi inspirado no famoso programa de televisão Masterchef! Com ele, os jogadores podem desenvolver o seu gosto pela cozinha. Os jogadores podem realizar experiências de cozinha, dando vida a receitas incomuns e sujeitando-se ao juízo crítico sobre os seus adversários.Perfeito para te divertires com toda a família!
+Dimensões: 7,7 x 30 x 30 cm</description>
+  <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/masterchef-jogo-oficial.jpg?v=1619622110</image_url>
+  <size>S</size>
+  <weight>1Kg</weight>
+  <quantity>1</quantity>
+  <color>variadas</color>
+  <aux>variadas</aux>
+ </product>
+</products>

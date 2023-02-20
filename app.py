@@ -21,7 +21,7 @@ def generate_feed():
 
 def main():
     # Shopify API credentials
-    tag = "Clementoni"
+    tag = "KuantoKusta"
     # shop_url = "https://abc-escolar.myshopify.com"
     api_key = "532e586c6a52981c06caa7eeec38ee8c"
     access_token = "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"
