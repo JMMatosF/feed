@@ -291,10 +291,8 @@ def obter_id_do_arquivo(api_key, loja, arquivo_nome):
         if response.status_code == 200:
             response_data = response.json()
             if 'data' in response_data:
-                # print("Arquivos encontrados:")
                 for edge in response_data['data']['files']['edges']:
                     file = edge['node']
-                    # print(f"ID: {file['id']}, Alt: {file['alt']}, URL: {file.get('url', 'N/A')}")
                     if file['alt'] == arquivo_nome:
                         return file['id'], file.get('url', 'N/A')
                 
@@ -312,7 +310,7 @@ def obter_id_do_arquivo(api_key, loja, arquivo_nome):
     return None, None
 
 # Função para atualizar o arquivo JSON usando a API GraphQL
-def atualizar_arquivo_na_shopify(api_key, loja, file_id, json_filename):
+def atualizar_arquivo_na_shopify(api_key, loja, file_id, original_source_url):
     url = f"https://{loja}/admin/api/2024-04/graphql.json"
     
     headers = {
@@ -320,17 +318,10 @@ def atualizar_arquivo_na_shopify(api_key, loja, file_id, json_filename):
         "Content-Type": "application/json"
     }
     
-    with open(json_filename, 'r', encoding='utf-8') as jsonfile:
-        file_data = json.load(jsonfile)
-    
-    # Transformar o arquivo JSON em uma string base64
-    file_data_str = json.dumps(file_data, ensure_ascii=False)
-    file_base64 = base64.b64encode(file_data_str.encode('utf-8')).decode('utf-8')
-
     # Query GraphQL para atualizar o arquivo
     query = """
-    mutation fileUpdate($files: [FileUpdateInput!]!) {
-        fileUpdate(files: $files) {
+    mutation fileUpdate($input: [FileUpdateInput!]!) {
+        fileUpdate(files: $input) {
             files {
                 ... on GenericFile {
                     id
@@ -346,11 +337,10 @@ def atualizar_arquivo_na_shopify(api_key, loja, file_id, json_filename):
     """
 
     variables = {
-        "files": [
+        "input": [
             {
                 "id": file_id,
-                "originalSource": f"data:application/json;base64,{file_base64}",
-                "alt": "products_by_tag"
+                "originalSource": original_source_url
             }
         ]
     }
@@ -377,15 +367,15 @@ if __name__ == "__main__":
     csv_filename = "products_by_tag.csv"
     xml_filename = "products_by_tag.xml"
     file_id = "gid://shopify/GenericFile/48250479345993"
-    json_filename = "products_by_tag.json"
+    original_source_url = "https://cdn.shopify.com/s/files/1/0555/4277/5963/files/products_by_tag.json?v=1721660444"
     arquivo_nome = "products_by_tag.json"
 
     # fetch_all_products_to_csv(shop_url, access_token, tag, csv_filename)
     # generate_xml_from_csv(csv_filename, xml_filename)
     
     
-    #file_id, file_url = obter_id_do_arquivo(access_token, shop_url, "products_by_tag")
-    #if file_id:
-    #    print(f"ID do arquivo: {file_id}, URL do arquivo: {file_url}")
+   # file_id, file_url = obter_id_do_arquivo(access_token, shop_url, "products_by_tag")
+   # if file_id:
+   #     print(f"ID do arquivo: {file_id}, URL do arquivo: {file_url}")
         # Atualizar o arquivo existente
-    atualizar_arquivo_na_shopify(access_token, shop_url, file_id, json_filename)
+    atualizar_arquivo_na_shopify(access_token, shop_url, file_id, original_source_url)
