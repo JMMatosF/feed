@@ -1,146 +1,391 @@
+api_request_delay = 2
+import requests
+import base64
+import xml.etree.ElementTree as ET
+import csv
 import json
 import time
-from xml.dom import minidom
+import os
+import re
 from xml.etree.ElementTree import Element, SubElement, tostring
-import requests
-import shopify
+from xml.dom import minidom
 from bs4 import BeautifulSoup
 
-api_request_delay = 2
+# Função para obter informações da próxima página
+def get_next_page_info(response):
+    link_header = response.headers.get("Link")
+    if link_header:
+        next_page_match = re.search(r'<(.+)>;\s*rel="next"', link_header)
+        if next_page_match:
+            next_page_info = next_page_match.group(1)
+            return next_page_info
+    return None
 
-ACCESS_TOKEN = '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'
-API_VERSION = '2023-10'
-API_KEY = '2c39bf093b7fd195f0484847a65a2648'
-PASSWORD = '537bbbeae234e1a815a43d617e1aa8da'
+def calculate_shipping_cost(weight, weight_unit, tags):
+    # Convertendo o peso para float
+    try:
+        weight = float(weight)
+    except ValueError:
+        weight = 0  # Caso o peso não seja um número válido
 
+    if weight_unit == 'g':
+        weight /= 1000
 
-def fetch_and_save_products_by_tag(shopify_store_url, tag, output_file, request_timeout=10):
-    global response
-    page = 1
-    product_data = []
+    is_furniture = 'Mobiliário' in tags
 
-    while True:
-        shopify.ShopifyResource.clear_session()
-        shopify.ShopifyResource.site = shopify_store_url
-        shopify.ShopifyResource.headers = {}
-
-        # Construct the API endpoint with pagination and specify the API version
-        api_endpoint = f"/admin/api/products.json?tags={tag}&limit=250&page={page}"
-
-        # Make a GET request to the Shopify API with a timeout, using API key and password
-        full_url = f"{shopify_store_url}{api_endpoint}"
-        try:
-            print(full_url)
-            response = requests.get(full_url, auth=(API_KEY, PASSWORD))
-        except requests.exceptions.Timeout:
-            print("Request timed out. Retrying in a moment...")
-            time.sleep(5)  # Sleep for 5 seconds and then retry
-            continue
-
-        # Check if the request was successful
-        if response.status_code == 200:
-            page_data = response.json().get('products')
-            if not page_data:
-                break  # No more pages to fetch
-            product_data.extend(page_data)
-            page += 1
-        elif response.status_code == 401:
-            print("Authentication failed. Please check your API key and password.")
-            break
+    if is_furniture:
+        # Tabela de preços para mobiliário
+        if weight <= 3.99:
+            return 6.85
+        elif weight <= 29.99:
+            return 13.10
+        elif weight <= 54.99:
+            return 19.35
+        elif weight <= 79.99:
+            return 25.60
+        elif weight <= 300:
+            return 78.10
+        elif weight <= 500:
+            return 119.35
+        elif weight <= 800:
+            return 263.10
         else:
-            print(f"Failed to retrieve product data. Status code: {response.status_code}")
-            break
+            return 0 
+    else:
+        if weight <= 4.99:
+            return 4.50
+        elif weight <= 9.99:
+            return 6.99
+        elif weight <= 14.99:
+            return 8.90
+        elif weight <= 19.99:
+            return 9.90
+        elif weight <= 24.99:
+            return 10.90
+        elif weight <= 29.99:
+            return 11.90
+        elif weight <= 34.99:
+            return 12.90
+        elif weight <= 39.99:
+            return 13.90
+        elif weight <= 44.99:
+            return 14.90
+        elif weight <= 49.99:
+            return 15.90
+        elif weight <= 54.99:
+            return 16.90
+        elif weight <= 59.99:
+            return 17.90
+        elif weight <= 64.99:
+            return 18.90
+        elif weight <= 69.99:
+            return 19.90
+        elif weight <= 74.99:
+            return 20.90
+        elif weight <= 80:
+            return 21.90
+        elif weight <= 300:
+            return 41.90
+        elif weight <= 400:
+            return 61.90
+        else:
+            return 0
 
-        # Introduce a delay to stay within rate limits
-        time.sleep(api_request_delay)
 
-    # Save all product data to the specified output file
-    with open(output_file, 'w') as file:
-        json.dump(product_data, file, indent=4)
 
-    if response.status_code == 200:
-        print(f"All products with the tag '{tag}' have been copied to '{output_file}'.")
-
-def main():
-    tag = "KuantoKusta"
-    api_key = "532e586c6a52981c06caa7eeec38ee8c"
-    access_token = "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"
-    password = "79686ebe8e57a554f1c0d89ddf8503a5"
-    output_file = 'products.json'
-    shopify_store_url = 'https://abc-escolar.myshopify.com'  # Remove "https://"
-    headers = {
-        "Content-Type": "application/json",
-        "X-Shopify-Access-Token": access_token
-    }
-    shopify.ShopifyResource.set_site("https://abcescolar.pt")
-    products_url = f"https://abc-escolar.myshopify.com/admin/products.json"
-    response = requests.get(products_url, auth=(api_key, password), headers=headers)
-    fetch_and_save_products_by_tag(shopify_store_url, tag, output_file)
-    page = 1
-    per_page = 250
-
-    # create the root element of the xml feed
-    root = Element("products")
-
-    # iterate through all products of vendor and paginate
+# Função para buscar todos os produtos com uma tag específica
+def fetch_all_products(shop_url, access_token, tag="KuantoKusta"):
+    all_variants = []
+    page_info = ""
     while True:
-        products = shopify.Product.find(tags=tag, limit=per_page, page=page)
+        url = f"https://{shop_url}/admin/api/2021-07/products.json?limit=250"
+        if page_info:
+            url += f"&page_info={page_info}"
+        if tag:
+            url += f"&tag={tag}"
 
-        for product in products:
-            if tag in product.tags:
-                for variant in product.variants:
-                    product_element = SubElement(root, "product")
-                    if variant.title == "Default Title":
-                        SubElement(product_element, "designation").text = str(product.title)
-                    else:
-                        SubElement(product_element, "designation").text = str(product.title + " " + variant.title)
-                    SubElement(product_element, "upc_ean").text = str(variant.sku)
-                    SubElement(product_element, "reference").text = str(variant.sku)
-                    # SubElement(product_element, "brand").text = str(product.vendor)
-                    # SubElement(product_element, "category").text = str(product.product_type)
-                    # SubElement(product_element, "category2").text = str(product.tags)
-                    if product.variants[0].compare_at_price is None:
-                        SubElement(product_element, "regular_price").text = str(variant.price) + "€"
-                    else:
-                        SubElement(product_element, "regular_price").text = str(
-                            variant.compare_at_price) + "€"
-                    SubElement(product_element, "current_price").text = str(variant.price) + "€"
-                    # SubElement(product_element, "availability").text = "in stock"
-                    # SubElement(product_element, "stock").text = "5"
-                    # SubElement(product_element, "norma_shipping_cost").text = "5€"
-                    # SubElement(product_element, "min_delivery_time").text = "1 dia"
-                    # SubElement(product_element, "max_delivery_time").text = "5 dia"
-                    # SubElement(product_element,
-                    #          "product_url").text = "https://abcescolar.pt/products/" + product.handle
-                    description = BeautifulSoup(product.body_html, "html.parser").get_text()
-                    SubElement(product_element, "description").text = description
-                    # ET.SubElement(product_element, "description").text = str(product.body_html)
-                    # SubElement(product_element, "image_url").text = product.images[0].src
-                    # SubElement(product_element, "size").text = "S"
-                    # SubElement(product_element, "weight").text = str(product.variants[0].grams) + " g"
-                    # SubElement(product_element, "quantity").text = "1"
-                    # SubElement(product_element, "color").text = "variadas"
-                    # SubElement(product_element, "aux").text = "variadas"
+        headers = {
+            "X-Shopify-Access-Token": access_token
+        }
 
-        # check if there are more products to paginate through
-        if len(products) < per_page:
+        response = requests.get(url, headers=headers)
+
+        if response.status_code == 200:
+            products_data = response.json().get('products', [])
+            if not products_data:
+                break
+
+            for product in products_data:
+                product_id = product['id']
+                title = product['title']
+                handle = product['handle']
+                vendor = product['vendor']
+                product_type = product['product_type']
+
+                options = {option['position']: option['name'] for option in product.get('options', [])}
+
+                for variant in product['variants']:
+                    weight = variant.get('weight', '0')
+                    weight_unit = variant.get('weight_unit', 'kg')
+                    shipping_cost = calculate_shipping_cost(weight, weight_unit, tag)
+                    variant_data = {
+                        'Status': product.get('status', 'N/A'),
+                        'Product ID': product_id,
+                        'Title': title,
+                        'Handle': handle,
+                        'Variant SKU': variant['sku'],
+                        'Variant Price': variant.get('price', 'N/A'),
+                        'Variant Inventory Qty': variant.get('inventory_quantity', 'N/A'),
+                        'Option1 Name': options.get(1, 'N/A'),
+                        'Option1 Value': variant.get('option1', 'N/A'),
+                        'Option2 Name': options.get(2, 'N/A'),
+                        'Option2 Value': variant.get('option2', 'N/A'),
+                        'Vendor': vendor,
+                        'Product Type': product_type,
+                        'Barcode': variant.get('barcode', 'N/A'),
+                        'Weight': str(variant.get('weight', 'N/A')) + ' ' + variant.get('weight_unit', ''),
+                        'Type': product.get('product_type','N/A'),
+                        'Size':product.get('product_size','N/A'),
+                        'Availability': variant.get('inventory_quantity', 'N/A'),
+                        'Tags': product.get('tags','N/A'),
+                        'Shipping_Cost': f"{shipping_cost} €",
+                        'Min_delivery_time':product.get('min_delivery_time',1),
+                        'Max_delivery_time':product.get('max_delivery_time',14),
+                        'Image': product['images'][0]['src'] if product['images'] else "N/A",
+                        'Description': product.get('body_html', 'N/A')
+                    }
+                    all_variants.append(variant_data)
+
+            page_info = get_next_page_info(response)
+            if not page_info:
+                break
+        elif response.status_code == 429:
+            print("Rate limit exceeded. Waiting for a moment before retrying...")
+            time.sleep(60)
+        else:
+            print(f"Error fetching products. Status code: {response.status_code}")
             break
-        page += 1
 
-    # create a pretty xml string
+    return all_variants
+
+# Função para salvar os produtos buscados em um arquivo CSV
+def fetch_all_products_to_csv(shop_url, access_token, tag, csv_filename):
+    all_variants = fetch_all_products(shop_url, access_token, tag)
+
+    if os.path.exists(csv_filename):
+        print(f"O arquivo '{csv_filename}' já existe. Sobrescrevendo...")
+
+    with open(csv_filename, 'w', newline='', encoding='utf-8') as csvfile:
+        fieldnames = ['Status','Product ID', 'Title', 'Handle', 'Variant SKU', 'Variant Price', 'Variant Inventory Qty', 
+                      'Option1 Name', 'Option1 Value', 'Option2 Name', 'Option2 Value', 'Vendor', 'Product Type', 'Barcode','Image','Weight',
+                        'Type','Size','Availability','Tags','Shipping_Cost','Min_delivery_time','Max_delivery_time','Description']
+        csv_writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        
+        csv_writer.writeheader()
+
+        for variant in all_variants:
+            csv_writer.writerow(variant)
+
+    print(f"Informações das variantes escritas com sucesso em '{csv_filename}'.")
+
+# Função para gerar um arquivo XML a partir do arquivo CSV
+def generate_xml_from_csv(csv_filename, xml_filename):
+    root = Element('products')
+    a = 0
+
+    with open(csv_filename, mode='r', encoding='utf-8') as csvfile:
+        csv_reader = csv.DictReader(csvfile)
+        for row in csv_reader:
+            if str(row['Status']) == 'active':
+                if int(row['Availability']) > 0:
+                    product_element = SubElement(root, "product")
+                    
+                    if row['Barcode'] == "N/A":
+                        continue
+                    else :
+                        SubElement(product_element, "upc_ean").text = row['Barcode'] if row['Barcode'] else "N/A"
+
+                    SubElement(product_element, "reference").text = row['Variant SKU']
+                    SubElement(product_element,"brand").text = row['Vendor']
+                    SubElement(product_element, "category").text = row['Type']
+                    designation = row['Title'] if row['Option1 Value'] == 'Default Title' else f"{row['Title']} {row['Option1 Value']}"
+                    SubElement(product_element, "designation").text = designation                
+                    regular_price = row['Variant Price'] + "€"
+                    SubElement(product_element, "regular_price").text = regular_price
+                    SubElement(product_element, "current_price").text = regular_price
+                    SubElement(product_element, "availability").text = 'in stock'
+                    SubElement(product_element, "stock").text = row['Variant Inventory Qty']
+                    SubElement(product_element, "norma_shipping_cost").text = row['Shipping_Cost']
+                    SubElement(product_element, "min_delivery_time").text = row['Min_delivery_time']
+                    SubElement(product_element, "max_delivery_time").text = row['Max_delivery_time']
+                    SubElement(product_element,"min_preparation_time").text = "1"
+                    SubElement(product_element,"max_preparation_time").text = "14"
+                    SubElement(product_element, "product_url").text = "https://abcescolar.pt/products/" + row['Handle']
+                    #soup = BeautifulSoup(row['Description'], "html.parser")
+                    #clean_description = soup.get_text(separator='\n')  # Usando '\n' como separador para preservar quebras de linha
+                    #SubElement(product_element, "description").text = clean_description
+                    SubElement(product_element, "description").text = row['Description']
+                    SubElement(product_element, "image_url").text = row['Image']
+                    SubElement(product_element, "size").text = row['Size'] 
+                    SubElement(product_element, "weight").text = row['Weight']
+                    SubElement(product_element,"quantiy").text = "1"
+                    SubElement(product_element,"color").text = "N/A"
+                    SubElement(product_element,"aux").text = "N/A"
+                    
+                    a = a +1
+                else:
+                    continue
+            else:
+                continue
+
+    # Geração do XML e formatação
     xml_str = tostring(root, 'utf-8')
     reparsed = minidom.parseString(xml_str)
-    pretty_xml_str = reparsed.toprettyxml(indent=" ", encoding='utf-8').decode('utf-8').replace('\0', '')
+    pretty_xml_str = reparsed.toprettyxml(indent="  ")
+    
+    with open(xml_filename, "w", encoding='utf-8') as xmlfile:
+        xmlfile.write(pretty_xml_str)
 
-    # write the xml string to a file
-    with open(f"{tag}.xml", "w", encoding="utf-8") as f:
-        try:
-            f.write(pretty_xml_str)
-        except UnicodeEncodeError:
-            f.write(pretty_xml_str.encode("ascii", "xmlcharrefreplace").decode())
+    print(f"XML file '{xml_filename}' generated successfully.")
 
-    return xml_str
+# Função para atualizar o arquivo JSON usando a API GraphQL
+def obter_id_do_arquivo(api_key, loja, arquivo_nome):
+    url = f"https://{loja}/admin/api/2024-04/graphql.json"
+    
+    headers = {
+        "X-Shopify-Access-Token": api_key,
+        "Content-Type": "application/json"
+    }
+    
+    query = """
+    query getFiles($cursor: String) {
+        files(first: 50, after: $cursor) {
+            edges {
+                node {
+                    id
+                    alt
+                    createdAt
+                    ... on GenericFile {
+                        url
+                        preview {
+                            image {
+                                originalSrc
+                            }
+                        }
+                    }
+                }
+            }
+            pageInfo {
+                hasNextPage
+                endCursor
+            }
+        }
+    }
+    """
+    
+    cursor = None
+    while True:
+        variables = {'cursor': cursor}
+        response = requests.post(url, headers=headers, json={'query': query, 'variables': variables})
+        
+        if response.status_code == 200:
+            response_data = response.json()
+            if 'data' in response_data:
+                # print("Arquivos encontrados:")
+                for edge in response_data['data']['files']['edges']:
+                    file = edge['node']
+                    # print(f"ID: {file['id']}, Alt: {file['alt']}, URL: {file.get('url', 'N/A')}")
+                    if file['alt'] == arquivo_nome:
+                        return file['id'], file.get('url', 'N/A')
+                
+                if response_data['data']['files']['pageInfo']['hasNextPage']:
+                    cursor = response_data['data']['files']['pageInfo']['endCursor']
+                else:
+                    break
+            else:
+                print("Resposta inesperada da API GraphQL:", response_data)
+                break
+        else:
+            print(f"Falha ao obter arquivos. Código de status: {response.status_code}")
+            print("Resposta:", response.text)
+            break
+    return None, None
 
+# Função para atualizar o arquivo JSON usando a API GraphQL
+def atualizar_arquivo_na_shopify(api_key, loja, file_id, json_filename):
+    url = f"https://{loja}/admin/api/2024-04/graphql.json"
+    
+    headers = {
+        "X-Shopify-Access-Token": api_key,
+        "Content-Type": "application/json"
+    }
+    
+    with open(json_filename, 'r', encoding='utf-8') as jsonfile:
+        file_data = json.load(jsonfile)
+    
+    # Transformar o arquivo JSON em uma string base64
+    file_data_str = json.dumps(file_data, ensure_ascii=False)
+    file_base64 = base64.b64encode(file_data_str.encode('utf-8')).decode('utf-8')
 
-if __name__ == '__main__':
-    main()
+    # Query GraphQL para atualizar o arquivo
+    query = """
+    mutation fileUpdate($files: [FileUpdateInput!]!) {
+        fileUpdate(files: $files) {
+            files {
+                ... on GenericFile {
+                    id
+                    url
+                }
+            }
+            userErrors {
+                field
+                message
+            }
+        }
+    }
+    """
+
+    variables = {
+        "files": [
+            {
+                "id": file_id,
+                "originalSource": f"data:application/json;base64,{file_base64}",
+                "alt": "products_by_tag"
+            }
+        ]
+    }
+
+    response = requests.post(url, headers=headers, json={'query': query, 'variables': variables})
+
+    if response.status_code == 200:
+        response_data = response.json()
+        if "errors" in response_data or response_data['data']['fileUpdate']['userErrors']:
+            print(f"Erros na resposta GraphQL: {response_data['data']['fileUpdate']['userErrors']}")
+        else:
+            print("Arquivo JSON atualizado com sucesso na Shopify!")
+            print("Resposta:", json.dumps(response_data, indent=4))
+    else:
+        print(f"Falha ao atualizar o arquivo JSON. Código de status: {response.status_code}")
+        print("Resposta:", response.text)
+
+if __name__ == "__main__":
+    shop_url = "abc-escolar.myshopify.com"
+    access_token = "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"
+    api_key = "2c39bf093b7fd195f0484847a65a2648"
+    password = "537bbbeae234e1a815a43d617e1aa8da"
+    tag = "KuantoKusta"
+    csv_filename = "products_by_tag.csv"
+    xml_filename = "products_by_tag.xml"
+    file_id = "gid://shopify/GenericFile/48250479345993"
+    json_filename = "products_by_tag.json"
+    arquivo_nome = "products_by_tag.json"
+
+    # fetch_all_products_to_csv(shop_url, access_token, tag, csv_filename)
+    # generate_xml_from_csv(csv_filename, xml_filename)
+    
+    
+    #file_id, file_url = obter_id_do_arquivo(access_token, shop_url, "products_by_tag")
+    #if file_id:
+    #    print(f"ID do arquivo: {file_id}, URL do arquivo: {file_url}")
+        # Atualizar o arquivo existente
+    atualizar_arquivo_na_shopify(access_token, shop_url, file_id, json_filename)

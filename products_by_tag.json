@@ -1,0 +1,13 @@
+{
+    "product": {
+        "upc_ean": {
+            "upc_ean": "teste"
+        },
+        "reference": {
+            "reference": "teste"
+        },
+        "brand": {
+            "brand": "Ambar, S.A."
+        }
+    }
+}
