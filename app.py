@@ -400,7 +400,7 @@ if __name__ == "__main__":
     github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/main/products_by_tag.xml'
     
     # Obter o ID do arquivo existente na Shopify
-    file_id = "gid://shopify/GenericFile/48296928313673"
+    #file_id = "gid://shopify/GenericFile/48296928313673"
     
     if file_id:
         # Atualizar o arquivo existente na Shopify
