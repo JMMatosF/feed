@@ -296,8 +296,8 @@ def criar_arquivo_na_shopify(api_key, loja, file_url):
     variables = {
         "input": [
             {
-                "originalSource": 'https://raw.githubusercontent.com/JMMatosF/feed/master/products_by_tag.xml',
-                "alt": "products_by_tag.xml"
+                "originalSource": 'https://raw.githubusercontent.com/JMMatosF/feed/master/Feed.xml',
+                "alt": ""
             }
         ]
     }
@@ -323,10 +323,10 @@ if __name__ == "__main__":
     password = "537bbbeae234e1a815a43d617e1aa8da"
     tag = "KuantoKusta"
     csv_filename = "products_by_tag.csv"
-    xml_filename = "products_by_tag.xml"
+    xml_filename = "Feed.xml"
     # fetch_all_products_to_csv(shop_url, access_token, tag, csv_filename)
     # generate_xml_from_csv(csv_filename, xml_filename)
-    file_path = 'products_by_tag.xml'
+    file_path = 'Feed.xml'
     commit_message = 'Atualização do arquivo XML com novos dados'
     
     # Token de acesso pessoal do GitHub
@@ -336,7 +336,7 @@ if __name__ == "__main__":
     commit_and_push_to_github(file_path, commit_message, github_token)
     
     # URL bruta do arquivo XML no GitHub
-    github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/main/products_by_tag.xml'
+    github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/main/Feed.xml'
     
     # Criar um novo arquivo na Shopify
     criar_arquivo_na_shopify(access_token, shop_url, github_raw_url)
