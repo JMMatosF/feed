@@ -296,7 +296,7 @@ def criar_arquivo_na_shopify(api_key, loja, file_url):
     variables = {
         "input": [
             {
-                "originalSource": 'https://github.com/JMMatosF/feed/blob/master/products_by_tag.xml',
+                "originalSource": 'https://raw.githubusercontent.com/JMMatosF/feed/master/products_by_tag.xml',
                 "alt": "products_by_tag.xml"
             }
         ]
