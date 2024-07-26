@@ -312,7 +312,7 @@ def obter_id_do_arquivo(api_key, loja, arquivo_nome):
                 for edge in response_data['data']['files']['edges']:
                     file = edge['node']
                     if file['alt'] == arquivo_nome:
-                        return file['id'], file.get('url', 'N/A')
+                        return file['id']  # Retornar apenas o ID
                 
                 if response_data['data']['files']['pageInfo']['hasNextPage']:
                     cursor = response_data['data']['files']['pageInfo']['endCursor']
@@ -325,7 +325,7 @@ def obter_id_do_arquivo(api_key, loja, arquivo_nome):
             print(f"Falha ao obter arquivos. Código de status: {response.status_code}")
             print("Resposta:", response.text)
             break
-    return None, None
+    return None
 
 def atualizar_arquivo_na_shopify(api_key, loja, file_id, file_url):
     url = f"https://{loja}/admin/api/2024-04/graphql.json"
@@ -395,12 +395,12 @@ if __name__ == "__main__":
     
     # Commit e push para o GitHub
     commit_and_push_to_github(file_path, commit_message, github_token)
-     
+    
     # URL bruta do arquivo XML no GitHub
     github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/master/Feed.xml'
     
     # Obter o ID do arquivo existente na Shopify
-    file_id = obter_id_do_arquivo(access_token, shop_url, "Feed.xml")
+    file_id = obter_id_do_arquivo(access_token, shop_url, "products_by_tag.xml")
     
     if file_id:
         # Atualizar o arquivo existente na Shopify
