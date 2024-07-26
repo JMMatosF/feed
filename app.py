@@ -395,7 +395,7 @@ if __name__ == "__main__":
     
     # Commit e push para o GitHub
     commit_and_push_to_github(file_path, commit_message, github_token)
-    
+     
     # URL bruta do arquivo XML no GitHub
     github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/master/Feed.xml'
     
