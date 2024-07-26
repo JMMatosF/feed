@@ -331,7 +331,7 @@ if __name__ == "__main__":
     commit_message = 'Atualização do arquivo JSON com novos dados'
     
     # Token de acesso pessoal do GitHub
-    github_token = 'YOUR_GITHUB_TOKEN'
+    github_token = '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'
     
     # Commit e push para o GitHub
     commit_and_push_to_github(file_path, commit_message, github_token)
