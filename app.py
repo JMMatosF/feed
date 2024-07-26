@@ -1,8 +1,9 @@
 api_request_delay = 2
 import requests
-import base64
+import os
 import xml.etree.ElementTree as ET
 import csv
+import subprocess
 import json
 import time
 import os
@@ -248,84 +249,40 @@ def generate_xml_from_csv(csv_filename, xml_filename):
 
     print(f"XML file '{xml_filename}' generated successfully.")
 
-# Função para atualizar o arquivo JSON usando a API GraphQL
-def obter_id_do_arquivo(api_key, loja, arquivo_nome):
-    url = f"https://{loja}/admin/api/2024-04/graphql.json"
+def commit_and_push_to_github(file_path, commit_message, token):
+    # URL do repositório com o token de acesso pessoal
+    repo_url = f'https://{token}@github.com/JMMatosF/feed.git'
     
-    headers = {
-        "X-Shopify-Access-Token": api_key,
-        "Content-Type": "application/json"
-    }
+    # Configurar o remote para usar o token
+    subprocess.run(['git', 'remote', 'set-url', 'origin', repo_url], check=True)
     
-    query = """
-    query getFiles($cursor: String) {
-        files(first: 50, after: $cursor) {
-            edges {
-                node {
-                    id
-                    alt
-                    createdAt
-                    ... on GenericFile {
-                        url
-                        preview {
-                            image {
-                                originalSrc
-                            }
-                        }
-                    }
-                }
-            }
-            pageInfo {
-                hasNextPage
-                endCursor
-            }
-        }
-    }
-    """
+    # Adicionar todos os arquivos modificados ao stage
+    subprocess.run(['git', 'add', '.'], check=True)  # Adiciona todos os arquivos modificados
     
-    cursor = None
-    while True:
-        variables = {'cursor': cursor}
-        response = requests.post(url, headers=headers, json={'query': query, 'variables': variables})
-        
-        if response.status_code == 200:
-            response_data = response.json()
-            if 'data' in response_data:
-                for edge in response_data['data']['files']['edges']:
-                    file = edge['node']
-                    if file['alt'] == arquivo_nome:
-                        return file['id'], file.get('url', 'N/A')
-                
-                if response_data['data']['files']['pageInfo']['hasNextPage']:
-                    cursor = response_data['data']['files']['pageInfo']['endCursor']
-                else:
-                    break
-            else:
-                print("Resposta inesperada da API GraphQL:", response_data)
-                break
-        else:
-            print(f"Falha ao obter arquivos. Código de status: {response.status_code}")
-            print("Resposta:", response.text)
-            break
-    return None, None
+    # Fazer commit
+    subprocess.run(['git', 'commit', '-m', commit_message], check=True)
+    
+    # Fazer push para o repositório remoto
+    subprocess.run(['git', 'push'], check=True)
+    
+    print(f"Arquivos comitados e enviados para o GitHub com sucesso.")
 
-# Função para atualizar o arquivo JSON usando a API GraphQL
-def atualizar_arquivo_na_shopify(api_key, loja, file_id, original_source_url):
+def criar_arquivo_na_shopify(api_key, loja, file_url):
     url = f"https://{loja}/admin/api/2024-04/graphql.json"
     
     headers = {
         "X-Shopify-Access-Token": api_key,
         "Content-Type": "application/json"
     }
-    
-    # Query GraphQL para atualizar o arquivo
+
     query = """
-    mutation fileUpdate($input: [FileUpdateInput!]!) {
-        fileUpdate(files: $input) {
+    mutation fileCreate($input: [FileCreateInput!]!) {
+        fileCreate(files: $input) {
             files {
                 ... on GenericFile {
                     id
                     url
+                    alt
                 }
             }
             userErrors {
@@ -335,27 +292,28 @@ def atualizar_arquivo_na_shopify(api_key, loja, file_id, original_source_url):
         }
     }
     """
-
+    
     variables = {
         "input": [
             {
-                "id": file_id,
-                "originalSource": original_source_url
+                "originalSource": file_url,
+                "alt": "products_by_tag.json"
             }
         ]
     }
 
     response = requests.post(url, headers=headers, json={'query': query, 'variables': variables})
-
+    
     if response.status_code == 200:
         response_data = response.json()
-        if "errors" in response_data or response_data['data']['fileUpdate']['userErrors']:
-            print(f"Erros na resposta GraphQL: {response_data['data']['fileUpdate']['userErrors']}")
+        if "errors" in response_data or "userErrors" in response_data.get('data', {}).get('fileCreate', {}):
+            errors = response_data.get('errors') or response_data['data']['fileCreate']['userErrors']
+            print(f"Erros na resposta GraphQL: {errors}")
         else:
-            print("Arquivo JSON atualizado com sucesso na Shopify!")
+            print("Arquivo JSON criado com sucesso na Shopify!")
             print("Resposta:", json.dumps(response_data, indent=4))
     else:
-        print(f"Falha ao atualizar o arquivo JSON. Código de status: {response.status_code}")
+        print(f"Falha ao criar o arquivo JSON. Código de status: {response.status_code}")
         print("Resposta:", response.text)
 
 if __name__ == "__main__":
@@ -366,16 +324,20 @@ if __name__ == "__main__":
     tag = "KuantoKusta"
     csv_filename = "products_by_tag.csv"
     xml_filename = "products_by_tag.xml"
-    file_id = "gid://shopify/GenericFile/48250479345993"
-    original_source_url = "https://cdn.shopify.com/s/files/1/0555/4277/5963/files/products_by_tag.json?v=1721660444"
-    arquivo_nome = "products_by_tag.json"
-
     # fetch_all_products_to_csv(shop_url, access_token, tag, csv_filename)
     # generate_xml_from_csv(csv_filename, xml_filename)
+    repo_path = r'C:\Users\jmato\PycharmProjects\feed'
+    file_path = 'products_by_tag.json'
+    commit_message = 'Atualização do arquivo JSON com novos dados'
     
+    # Token de acesso pessoal do GitHub
+    github_token = 'YOUR_GITHUB_TOKEN'
     
-   # file_id, file_url = obter_id_do_arquivo(access_token, shop_url, "products_by_tag")
-   # if file_id:
-   #     print(f"ID do arquivo: {file_id}, URL do arquivo: {file_url}")
-        # Atualizar o arquivo existente
-    atualizar_arquivo_na_shopify(access_token, shop_url, file_id, original_source_url)
+    # Commit e push para o GitHub
+    commit_and_push_to_github(file_path, commit_message, github_token)
+    
+    # URL bruta do arquivo JSON no GitHub
+    github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/main/products_by_tag.json'
+    
+    # Criar um novo arquivo na Shopify
+    criar_arquivo_na_shopify(access_token, shop_url, github_raw_url)
