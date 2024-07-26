@@ -400,7 +400,7 @@ if __name__ == "__main__":
     github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/main/Feed.xml'
     
     # Obter o ID do arquivo existente na Shopify
-    file_id, _ = obter_id_do_arquivo(access_token, shop_url, "Feed.xml")
+    file_id = obter_id_do_arquivo(access_token, shop_url, "Feed.xml")
     
     if file_id:
         # Atualizar o arquivo existente na Shopify
