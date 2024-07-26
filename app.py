@@ -297,7 +297,7 @@ def criar_arquivo_na_shopify(api_key, loja, file_url):
         "input": [
             {
                 "originalSource": file_url,
-                "alt": "products_by_tag.json"
+                "alt": "products_by_tag.xml"
             }
         ]
     }
@@ -310,10 +310,10 @@ def criar_arquivo_na_shopify(api_key, loja, file_url):
             errors = response_data.get('errors') or response_data['data']['fileCreate']['userErrors']
             print(f"Erros na resposta GraphQL: {errors}")
         else:
-            print("Arquivo JSON criado com sucesso na Shopify!")
+            print("Arquivo XML criado com sucesso na Shopify!")
             print("Resposta:", json.dumps(response_data, indent=4))
     else:
-        print(f"Falha ao criar o arquivo JSON. Código de status: {response.status_code}")
+        print(f"Falha ao criar o arquivo XML. Código de status: {response.status_code}")
         print("Resposta:", response.text)
 
 if __name__ == "__main__":
@@ -326,8 +326,8 @@ if __name__ == "__main__":
     xml_filename = "products_by_tag.xml"
     # fetch_all_products_to_csv(shop_url, access_token, tag, csv_filename)
     # generate_xml_from_csv(csv_filename, xml_filename)
-    file_path = 'products_by_tag.json'
-    commit_message = 'Atualização do arquivo JSON com novos dados'
+    file_path = 'products_by_tag.xml'
+    commit_message = 'Atualização do arquivo XML com novos dados'
     
     # Token de acesso pessoal do GitHub
     github_token = os.getenv("GITHUB_TOKEN")
@@ -335,8 +335,8 @@ if __name__ == "__main__":
     # Commit e push para o GitHub
     commit_and_push_to_github(file_path, commit_message, github_token)
     
-    # URL bruta do arquivo JSON no GitHub
-    github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/main/products_by_tag.json'
+    # URL bruta do arquivo XML no GitHub
+    github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/main/products_by_tag.xml'
     
     # Criar um novo arquivo na Shopify
     criar_arquivo_na_shopify(access_token, shop_url, github_raw_url)
