@@ -318,7 +318,7 @@ def criar_arquivo_na_shopify(api_key, loja, file_url):
 
 if __name__ == "__main__":
     shop_url = "abc-escolar.myshopify.com"
-    access_token = "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"
+    access_token = os.getenv("SHOPIFY_ACCESS_TOKEN")
     api_key = "2c39bf093b7fd195f0484847a65a2648"
     password = "537bbbeae234e1a815a43d617e1aa8da"
     tag = "KuantoKusta"
