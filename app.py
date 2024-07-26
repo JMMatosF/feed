@@ -249,21 +249,21 @@ def generate_xml_from_csv(csv_filename, xml_filename):
 
     print(f"XML file '{xml_filename}' generated successfully.")
 
-def commit_and_push_to_github(file_path, commit_message, token):
+def commit_and_push_to_github(repo_path, file_path, commit_message, token):
     # URL do repositório com o token de acesso pessoal
     repo_url = f'https://{token}@github.com/JMMatosF/feed.git'
     
     # Configurar o remote para usar o token
-    subprocess.run(['git', 'remote', 'set-url', 'origin', repo_url], check=True)
+    subprocess.run(['git', '-C', repo_path, 'remote', 'set-url', 'origin', repo_url], check=True)
     
     # Adicionar todos os arquivos modificados ao stage
-    subprocess.run(['git', 'add', '.'], check=True)  # Adiciona todos os arquivos modificados
+    subprocess.run(['git', '-C', repo_path, 'add', '.'], check=True)
     
     # Fazer commit
-    subprocess.run(['git', 'commit', '-m', commit_message], check=True)
+    subprocess.run(['git', '-C', repo_path, 'commit', '-m', commit_message], check=True)
     
     # Fazer push para o repositório remoto
-    subprocess.run(['git', 'push'], check=True)
+    subprocess.run(['git', '-C', repo_path, 'push'], check=True)
     
     print(f"Arquivos comitados e enviados para o GitHub com sucesso.")
 
@@ -334,7 +334,7 @@ if __name__ == "__main__":
     github_token = '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'
     
     # Commit e push para o GitHub
-    commit_and_push_to_github(file_path, commit_message, github_token)
+    commit_and_push_to_github(repo_path, file_path, commit_message, github_token)
     
     # URL bruta do arquivo JSON no GitHub
     github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/main/products_by_tag.json'
