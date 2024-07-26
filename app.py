@@ -276,8 +276,8 @@ def criar_arquivo_na_shopify(api_key, loja, file_url):
     }
 
     query = """
-    mutation fileCreate($input: [FileCreateInput!]!) {
-        fileCreate(files: $input) {
+    mutation fileUpdate($input: [FileUpdateInput!]!) {
+        fileUpdate(files: $input) {
             files {
                 ... on GenericFile {
                     id
