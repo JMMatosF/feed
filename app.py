@@ -387,7 +387,7 @@ if __name__ == "__main__":
     xml_filename = "Feed.xml"
     # fetch_all_products_to_csv(shop_url, access_token, tag, csv_filename)
     # generate_xml_from_csv(csv_filename, xml_filename)
-    file_path = 'Feed.xml'
+    file_path = 'idealo.csv'
     commit_message = 'Atualização do arquivo XML com novos dados'
     
     # Token de acesso pessoal do GitHub
@@ -397,10 +397,10 @@ if __name__ == "__main__":
     commit_and_push_to_github(file_path, commit_message, github_token)
     
     # URL bruta do arquivo XML no GitHub
-    github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/master/Feed.xml'
+    github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/master/idealo.csv'
     
     # Obter o ID do arquivo existente na Shopify
-    file_id = obter_id_do_arquivo(access_token, shop_url, "Feed.xml")
+    file_id = obter_id_do_arquivo(access_token, shop_url, "idealo.csv")
     
     if file_id:
         # Atualizar o arquivo existente na Shopify
