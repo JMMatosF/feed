@@ -404,6 +404,6 @@ if __name__ == "__main__":
     
     if file_id:
         # Atualizar o arquivo existente na Shopify
-        print("atualizar_arquivo_na_shopify(access_token, shop_url, file_id, github_raw_url)")
+        atualizar_arquivo_na_shopify(access_token, shop_url, file_id, github_raw_url)
     else:
         print("Arquivo não encontrado na Shopify.")
