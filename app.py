@@ -397,13 +397,13 @@ if __name__ == "__main__":
     commit_and_push_to_github(file_path, commit_message, github_token)
     
     # URL bruta do arquivo XML no GitHub
-    github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/main/Feed.xml'
+    github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/master/Feed.xml'
     
     # Obter o ID do arquivo existente na Shopify
     file_id = obter_id_do_arquivo(access_token, shop_url, "Feed.xml")
     
     if file_id:
         # Atualizar o arquivo existente na Shopify
-        atualizar_arquivo_na_shopify(access_token, shop_url, file_id, github_raw_url)
+        print("atualizar_arquivo_na_shopify(access_token, shop_url, file_id, github_raw_url)")
     else:
         print("Arquivo não encontrado na Shopify.")
