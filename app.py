@@ -80,7 +80,7 @@ def calculate_shipping_cost(weight, weight_unit, tags):
         elif weight <= 64.99:
             return 18.90
         elif weight <= 69.99:
-            return 19.90
+            return 20.00
         elif weight <= 74.99:
             return 20.90
         elif weight <= 80:
