@@ -394,7 +394,7 @@ if __name__ == "__main__":
     github_token = os.getenv("GITHUB_TOKEN")
     
     # Commit e push para o GitHub
-    commit_and_push_to_github(file_path, commit_message, github_token)
+    
     
     # URL bruta do arquivo XML no GitHub
     github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/master/idealo.csv'
@@ -407,3 +407,4 @@ if __name__ == "__main__":
         atualizar_arquivo_na_shopify(access_token, shop_url, file_id, github_raw_url)
     else:
         print("Arquivo não encontrado na Shopify.")
+    commit_and_push_to_github(file_path, commit_message, github_token)
