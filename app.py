@@ -275,68 +275,7 @@ def commit_and_push_to_github(file_path, commit_message, token):
     
     print(f"Arquivos comitados e enviados para o GitHub com sucesso.")
 
-def obter_id_do_arquivo(api_key, loja, arquivo_nome):
-    url = f"https://{loja}/admin/api/2024-04/graphql.json"
-    
-    headers = {
-        "X-Shopify-Access-Token": api_key,
-        "Content-Type": "application/json"
-    }
-    
-    query = """
-    query getFiles($cursor: String) {
-        files(first: 50, after: $cursor) {
-            edges {
-                node {
-                    id
-                    alt
-                    createdAt
-                    ... on GenericFile {
-                        url
-                        preview {
-                            image {
-                                originalSrc
-                            }
-                        }
-                    }
-                }
-            }
-            pageInfo {
-                hasNextPage
-                endCursor
-            }
-        }
-    }
-    """
-    
-    cursor = None
-    while True:
-        variables = {'cursor': cursor}
-        response = requests.post(url, headers=headers, json={'query': query, 'variables': variables})
-        
-        if response.status_code == 200:
-            response_data = response.json()
-            if 'data' in response_data:
-                for edge in response_data['data']['files']['edges']:
-                    file = edge['node']
-                    print(f"Arquivo: {file['alt']}, ID: {file['id']}, URL: {file.get('url', 'N/A')}")
-                    if file['alt'] == arquivo_nome:
-                        return file['id']  # Retornar apenas o ID
-                
-                if response_data['data']['files']['pageInfo']['hasNextPage']:
-                    cursor = response_data['data']['files']['pageInfo']['endCursor']
-                else:
-                    break
-            else:
-                print("Resposta inesperada da API GraphQL:", response_data)
-                break
-        else:
-            print(f"Falha ao obter arquivos. Código de status: {response.status_code}")
-            print("Resposta:", response.text)
-            break
-    return None
-
-def atualizar_arquivo_na_shopify(api_key, loja, file_id, file_url):
+def atualizar_arquivo_na_shopify(api_key, loja, file_id, file_url, alt_text):
     url = f"https://{loja}/admin/api/2024-04/graphql.json"
     
     headers = {
@@ -367,7 +306,7 @@ def atualizar_arquivo_na_shopify(api_key, loja, file_id, file_url):
             {
                 "id": file_id,
                 "originalSource": file_url,
-                "alt": "products_by_tag.xml"
+                "alt": alt_text
             }
         ]
     }
@@ -380,10 +319,10 @@ def atualizar_arquivo_na_shopify(api_key, loja, file_id, file_url):
             errors = response_data.get('errors') or response_data['data']['fileUpdate']['userErrors']
             print(f"Erros na resposta GraphQL: {errors}")
         else:
-            print("Arquivo XML atualizado com sucesso na Shopify!")
+            print(f"Arquivo {alt_text} atualizado com sucesso na Shopify!")
             print("Resposta:", json.dumps(response_data, indent=4))
     else:
-        print(f"Falha ao atualizar o arquivo XML. Código de status: {response.status_code}")
+        print(f"Falha ao atualizar o arquivo {alt_text}. Código de status: {response.status_code}")
         print("Resposta:", response.text)
 
 if __name__ == "__main__":
@@ -396,23 +335,16 @@ if __name__ == "__main__":
     xml_filename = "Feed.xml"
     # fetch_all_products_to_csv(shop_url, access_token, tag, csv_filename)
     # generate_xml_from_csv(csv_filename, xml_filename)
-    file_path = 'idealo.csv'
-    commit_message = 'Atualização do arquivo XML com novos dados'
-    
-    # Token de acesso pessoal do GitHub
     github_token = os.getenv("GITHUB_TOKEN")
-    
-    # Commit e push para o GitHub
-    commit_and_push_to_github(file_path, commit_message, github_token)
-    
-    # URL bruta do arquivo XML no GitHub
-    github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/master/Feed.xml'
-    
-    # Obter o ID do arquivo existente na Shopify
-    file_id = obter_id_do_arquivo(access_token, shop_url, "idealo.csv")
-    
-    if file_id:
-        # Atualizar o arquivo existente na Shopify
-        atualizar_arquivo_na_shopify(access_token, shop_url, file_id, github_raw_url)
-    else:
-        print("Arquivo não encontrado na Shopify.")
+    xml_file_path = 'Feed.xml'
+    xml_commit_message = 'Atualização do arquivo XML com novos dados'
+    commit_and_push_to_github(xml_file_path, xml_commit_message, github_token)
+    xml_github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/master/Feed.xml'
+    xml_file_id = "gid://shopify/GenericFile/48296928313673"
+    atualizar_arquivo_na_shopify(access_token, shop_url, xml_file_id, xml_github_raw_url, "products_by_tag.xml")
+    csv_file_path = 'idealo.csv'
+    csv_commit_message = 'Atualização do arquivo CSV com novos dados'
+    commit_and_push_to_github(csv_file_path, csv_commit_message, github_token)
+    csv_github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/master/idealo.csv'
+    csv_file_id = "gid://shopify/GenericFile/48297179480393"
+    atualizar_arquivo_na_shopify(access_token, shop_url, csv_file_id, csv_github_raw_url, "idealo.csv")
