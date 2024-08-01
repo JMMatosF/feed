@@ -249,6 +249,62 @@ def generate_xml_from_csv(csv_filename, xml_filename):
 
     print(f"XML file '{xml_filename}' generated successfully.")
 
+def generate_idealo_csv_from_products(input_csv_filename, output_csv_filename):
+    # Definir os nomes das colunas do CSV de saída
+    fieldnames = [
+        'N° artículo en tienda', 'EAN / GTIN / código barras', 'Número del fabricante (HAN/MPN)', 'Fabricante / Marca',
+        'Nombre del producto', 'Precio', 'Precio especial', 'Precio original', 'Plazo de entrega',
+        'Categoría del producto en la tienda', 'Descripción del producto', 'Características del producto / Otros atributos',
+        'URL del producto', 'URLimagen_1', 'URLimagen_2', 'URLimagen_3', 'Color', 'Talla', 'Transferencia',
+        'Transferencia / Paypal Austria', 'Tarjeta de crédito', 'Paypal', 'Sofortüberweisung', 'Domiciliación',
+        'Reembolso', 'Comentario sobre los gastos de envío', 'Precio base', 'Cupón de descuento',
+        'Clase de eficiencia energética', 'Unidades'
+    ]
+
+    with open(input_csv_filename, mode='r', encoding='utf-8') as input_csvfile:
+        csv_reader = csv.DictReader(input_csvfile)
+        with open(output_csv_filename, mode='w', newline='', encoding='utf-8') as output_csvfile:
+            csv_writer = csv.DictWriter(output_csvfile, fieldnames=fieldnames)
+            csv_writer.writeheader()
+
+            for row in csv_reader:
+                if str(row['Status']) == 'active' and int(row['Availability']) > 0:
+                    idealo_row = {
+                        'N° artículo en tienda': row['Product ID'],
+                        'EAN / GTIN / código barras': row['Barcode'],
+                        'Número del fabricante (HAN/MPN)': row['Variant SKU'],
+                        'Fabricante / Marca': row['Vendor'],
+                        'Nombre del producto': row['Title'],
+                        'Precio': row['Variant Price'],
+                        'Precio especial': row['Variant Price'],  # Assumindo que é o mesmo do preço
+                        'Precio original': row['Variant Price'],  # Assumindo que é o mesmo do preço
+                        'Plazo de entrega': f"{row['Min_delivery_time']} - {row['Max_delivery_time']} días",
+                        'Categoría del producto en la tienda': row['Type'],
+                        'Descripción del producto': row['Description'],
+                        'Características del producto / Otros atributos': row['Tags'],  # Assumindo que as tags são atributos
+                        'URL del producto': f"https://abcescolar.pt/products/{row['Handle']}",
+                        'URLimagen_1': row['Image'],
+                        'URLimagen_2': '',  # Supondo que não há segunda imagem
+                        'URLimagen_3': '',  # Supondo que não há terceira imagem
+                        'Color': 'N/A',  # Supondo que não há informação de cor
+                        'Talla': row['Size'],
+                        'Transferencia': '',  # Não especificado
+                        'Transferencia / Paypal Austria': '',  # Não especificado
+                        'Tarjeta de crédito': '',  # Não especificado
+                        'Paypal': '',  # Não especificado
+                        'Sofortüberweisung': '',  # Não especificado
+                        'Domiciliación': '',  # Não especificado
+                        'Reembolso': '',  # Não especificado
+                        'Comentario sobre los gastos de envío': '',  # Não especificado
+                        'Precio base': row['Variant Price'],  # Assumindo que é o mesmo do preço
+                        'Cupón de descuento': '',  # Não especificado
+                        'Clase de eficiencia energética': 'N/A',  # Supondo que não há informação de eficiência energética
+                        'Unidades': row['Availability']
+                    }
+                    csv_writer.writerow(idealo_row)
+
+    print(f"CSV file '{output_csv_filename}' generated successfully.")
+
 def has_changes_to_commit():
     result = subprocess.run(['git', 'status', '--porcelain'], capture_output=True, text=True)
     return bool(result.stdout.strip())
@@ -333,8 +389,10 @@ if __name__ == "__main__":
     tag = "KuantoKusta"
     csv_filename = "products_by_tag.csv"
     xml_filename = "Feed.xml"
-    # fetch_all_products_to_csv(shop_url, access_token, tag, csv_filename)
-    # generate_xml_from_csv(csv_filename, xml_filename)
+    idealo_csv_filename = "idealo.csv"
+    fetch_all_products_to_csv(shop_url, access_token, tag, csv_filename)
+    generate_xml_from_csv(csv_filename, xml_filename)
+    generate_idealo_csv_from_products(csv_filename, idealo_csv_filename)
     github_token = os.getenv("GITHUB_TOKEN")
     xml_file_path = 'Feed.xml'
     xml_commit_message = 'Atualização do arquivo XML com novos dados'
