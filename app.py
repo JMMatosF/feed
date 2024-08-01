@@ -249,7 +249,15 @@ def generate_xml_from_csv(csv_filename, xml_filename):
 
     print(f"XML file '{xml_filename}' generated successfully.")
 
+def has_changes_to_commit():
+    result = subprocess.run(['git', 'status', '--porcelain'], capture_output=True, text=True)
+    return bool(result.stdout.strip())
+
 def commit_and_push_to_github(file_path, commit_message, token):
+    if not has_changes_to_commit():
+        print("Nenhuma mudança detectada. Pulando o commit e push.")
+        return
+    
     # URL do repositório com o token de acesso pessoal
     repo_url = f'https://{token}@github.com/JMMatosF/feed.git'
     
@@ -311,6 +319,7 @@ def obter_id_do_arquivo(api_key, loja, arquivo_nome):
             if 'data' in response_data:
                 for edge in response_data['data']['files']['edges']:
                     file = edge['node']
+                    print(f"Arquivo: {file['alt']}, ID: {file['id']}, URL: {file.get('url', 'N/A')}")
                     if file['alt'] == arquivo_nome:
                         return file['id']  # Retornar apenas o ID
                 
@@ -394,10 +403,10 @@ if __name__ == "__main__":
     github_token = os.getenv("GITHUB_TOKEN")
     
     # Commit e push para o GitHub
-    
+    commit_and_push_to_github(file_path, commit_message, github_token)
     
     # URL bruta do arquivo XML no GitHub
-    github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/master/idealo.csv'
+    github_raw_url = 'https://raw.githubusercontent.com/JMMatosF/feed/master/Feed.xml'
     
     # Obter o ID do arquivo existente na Shopify
     file_id = obter_id_do_arquivo(access_token, shop_url, "idealo.csv")
@@ -407,4 +416,3 @@ if __name__ == "__main__":
         atualizar_arquivo_na_shopify(access_token, shop_url, file_id, github_raw_url)
     else:
         print("Arquivo não encontrado na Shopify.")
-    commit_and_push_to_github(file_path, commit_message, github_token)
