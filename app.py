@@ -249,61 +249,60 @@ def generate_xml_from_csv(csv_filename, xml_filename):
 
     print(f"XML file '{xml_filename}' generated successfully.")
 
-def generate_idealo_csv_from_products(input_csv_filename, output_csv_filename):
-    # Definir os nomes das colunas do CSV de saída
-    fieldnames = [
-        'N° artículo en tienda', 'EAN / GTIN / código barras', 'Número del fabricante (HAN/MPN)', 'Fabricante / Marca',
-        'Nombre del producto', 'Precio', 'Precio especial', 'Precio original', 'Plazo de entrega',
-        'Categoría del producto en la tienda', 'Descripción del producto', 'Características del producto / Otros atributos',
-        'URL del producto', 'URLimagen_1', 'URLimagen_2', 'URLimagen_3', 'Color', 'Talla', 'Transferencia',
-        'Transferencia / Paypal Austria', 'Tarjeta de crédito', 'Paypal', 'Sofortüberweisung', 'Domiciliación',
-        'Reembolso', 'Comentario sobre los gastos de envío', 'Precio base', 'Cupón de descuento',
-        'Clase de eficiencia energética', 'Unidades'
-    ]
+def generate_idealo_csv_from_products(csv_filename, idealo_csv_filename):
+    with open(csv_filename, mode='r', encoding='utf-8') as csvfile:
+        csv_reader = csv.DictReader(csvfile)
+        fieldnames = [
+            'N° artículo en tienda', 'EAN / GTIN / código barras', 'Número del fabricante (HAN/MPN)',
+            'Fabricante / Marca', 'Nombre del producto', 'Precio', 'Precio especial', 'Precio original',
+            'Plazo de entrega', 'Categoría del producto en la tienda', 'Descripción del producto',
+            'Características del producto / Otros atributos', 'URL del producto', 'URLimagen_1',
+            'URLimagen_2', 'URLimagen_3', 'Color', 'Talla', 'Transferencia', 'Transferencia / Paypal Austria',
+            'Tarjeta de crédito', 'Paypal', 'Sofortüberweisung', 'Domiciliación', 'Reembolso',
+            'Comentario sobre los gastos de envío', 'Precio base', 'Cupón de descuento',
+            'Clase de eficiencia energética', 'Unidades'
+        ]
 
-    with open(input_csv_filename, mode='r', encoding='utf-8') as input_csvfile:
-        csv_reader = csv.DictReader(input_csvfile)
-        with open(output_csv_filename, mode='w', newline='', encoding='utf-8') as output_csvfile:
-            csv_writer = csv.DictWriter(output_csvfile, fieldnames=fieldnames)
+        with open(idealo_csv_filename, mode='w', newline='', encoding='utf-8') as idealo_csvfile:
+            csv_writer = csv.DictWriter(idealo_csvfile, fieldnames=fieldnames)
             csv_writer.writeheader()
 
             for row in csv_reader:
                 if str(row['Status']) == 'active' and int(row['Availability']) > 0:
-                    idealo_row = {
-                        'N° artículo en tienda': row['Product ID'],
+                    csv_writer.writerow({
+                        'N° artículo en tienda': row['Variant SKU'],
                         'EAN / GTIN / código barras': row['Barcode'],
                         'Número del fabricante (HAN/MPN)': row['Variant SKU'],
                         'Fabricante / Marca': row['Vendor'],
                         'Nombre del producto': row['Title'],
                         'Precio': row['Variant Price'],
-                        'Precio especial': row['Variant Price'],  # Assumindo que é o mesmo do preço
-                        'Precio original': row['Variant Price'],  # Assumindo que é o mesmo do preço
+                        'Precio especial': '',  # Adicione a lógica necessária se houver preço especial
+                        'Precio original': row['Variant Price'],
                         'Plazo de entrega': f"{row['Min_delivery_time']} - {row['Max_delivery_time']} días",
                         'Categoría del producto en la tienda': row['Type'],
                         'Descripción del producto': row['Description'],
-                        'Características del producto / Otros atributos': row['Tags'],  # Assumindo que as tags são atributos
+                        'Características del producto / Otros atributos': '',  # Adicione a lógica necessária se houver atributos adicionais
                         'URL del producto': f"https://abcescolar.pt/products/{row['Handle']}",
                         'URLimagen_1': row['Image'],
-                        'URLimagen_2': '',  # Supondo que não há segunda imagem
-                        'URLimagen_3': '',  # Supondo que não há terceira imagem
-                        'Color': 'N/A',  # Supondo que não há informação de cor
+                        'URLimagen_2': '',  # Adicione a lógica necessária se houver imagens adicionais
+                        'URLimagen_3': '',  # Adicione a lógica necessária se houver imagens adicionais
+                        'Color': '',  # Adicione a lógica necessária se houver informações de cor
                         'Talla': row['Size'],
-                        'Transferencia': '',  # Não especificado
-                        'Transferencia / Paypal Austria': '',  # Não especificado
-                        'Tarjeta de crédito': '',  # Não especificado
-                        'Paypal': '',  # Não especificado
-                        'Sofortüberweisung': '',  # Não especificado
-                        'Domiciliación': '',  # Não especificado
-                        'Reembolso': '',  # Não especificado
-                        'Comentario sobre los gastos de envío': '',  # Não especificado
-                        'Precio base': row['Variant Price'],  # Assumindo que é o mesmo do preço
-                        'Cupón de descuento': '',  # Não especificado
-                        'Clase de eficiencia energética': 'N/A',  # Supondo que não há informação de eficiência energética
+                        'Transferencia': '',  # Adicione a lógica necessária se houver informações de transferência
+                        'Transferencia / Paypal Austria': '',  # Adicione a lógica necessária se houver informações de transferência/Paypal
+                        'Tarjeta de crédito': '',  # Adicione a lógica necessária se houver informações de cartão de crédito
+                        'Paypal': '',  # Adicione a lógica necessária se houver informações de Paypal
+                        'Sofortüberweisung': '',  # Adicione a lógica necessária se houver informações de Sofortüberweisung
+                        'Domiciliación': '',  # Adicione a lógica necessária se houver informações de domiciliación
+                        'Reembolso': '',  # Adicione a lógica necessária se houver informações de reembolso
+                        'Comentario sobre los gastos de envío': row['Shipping_Cost'],
+                        'Precio base': row['Variant Price'],
+                        'Cupón de descuento': '',  # Adicione a lógica necessária se houver cupons de desconto
+                        'Clase de eficiencia energética': '',  # Adicione a lógica necessária se houver classe de eficiência energética
                         'Unidades': row['Availability']
-                    }
-                    csv_writer.writerow(idealo_row)
+                    })
 
-    print(f"CSV file '{output_csv_filename}' generated successfully.")
+    print(f"Arquivo CSV '{idealo_csv_filename}' gerado com sucesso.")
 
 def has_changes_to_commit():
     result = subprocess.run(['git', 'status', '--porcelain'], capture_output=True, text=True)
