@@ -281,13 +281,10 @@ def generate_idealo_csv_from_products(csv_filename, idealo_csv_filename):
                         'Plazo de entrega': f"{row['Min_delivery_time']} - {row['Max_delivery_time']} días",
                         'Categoría del producto en la tienda': row['Type'],
                         'Descripción del producto': row['Description'],
-<<<<<<< HEAD
                         'Características del producto / Otros atributos': row['Tags'],  # Assumindo que as tags são atributos
                         'URL del producto': f"https://abcescolar.pt/en/products/{row['Handle']}",
-=======
                         'Características del producto / Otros atributos': '',  # Adicione a lógica necessária se houver atributos adicionais
                         'URL del producto': f"https://abcescolar.pt/products/{row['Handle']}",
->>>>>>> 9e0d883303c9f0db431d77de7351f007ea9ba8bc
                         'URLimagen_1': row['Image'],
                         'URLimagen_2': '',  # Adicione a lógica necessária se houver imagens adicionais
                         'URLimagen_3': '',  # Adicione a lógica necessária se houver imagens adicionais
