@@ -282,7 +282,7 @@ def generate_idealo_csv_from_products(input_csv_filename, output_csv_filename):
                         'Categoría del producto en la tienda': row['Type'],
                         'Descripción del producto': row['Description'],
                         'Características del producto / Otros atributos': row['Tags'],  # Assumindo que as tags são atributos
-                        'URL del producto': f"https://abcescolar.pt/products/{row['Handle']}",
+                        'URL del producto': f"https://abcescolar.pt/en/products/{row['Handle']}",
                         'URLimagen_1': row['Image'],
                         'URLimagen_2': '',  # Supondo que não há segunda imagem
                         'URLimagen_3': '',  # Supondo que não há terceira imagem

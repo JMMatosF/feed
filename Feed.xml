@@ -748,7 +748,7 @@
     <regular_price>27.80€</regular_price>
     <current_price>27.80€</current_price>
     <availability>in stock</availability>
-    <stock>1</stock>
+    <stock>10</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -1524,7 +1524,7 @@
     <regular_price>4.92€</regular_price>
     <current_price>4.92€</current_price>
     <availability>in stock</availability>
-    <stock>4</stock>
+    <stock>3</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -1810,7 +1810,7 @@
     <regular_price>28.20€</regular_price>
     <current_price>28.20€</current_price>
     <availability>in stock</availability>
-    <stock>6</stock>
+    <stock>3</stock>
     <norma_shipping_cost>6.99 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -2288,7 +2288,7 @@
     <regular_price>3.47€</regular_price>
     <current_price>3.47€</current_price>
     <availability>in stock</availability>
-    <stock>12</stock>
+    <stock>8</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -2377,6 +2377,106 @@
     <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/balao-erlenmeyer-1000ml.jpg?v=1629276843</image_url>
     <size>N/A</size>
     <weight>1.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>N/A</upc_ean>
+    <reference>18015224</reference>
+    <brand>Auxilab, S.L.</brand>
+    <category>Balão</category>
+    <designation>Balão esférico c/ fundo redondo esmerilado 250mL</designation>
+    <regular_price>15.68€</regular_price>
+    <current_price>15.68€</current_price>
+    <availability>in stock</availability>
+    <stock>16</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/balao-esferico-c-fundo-redondo-esm-2429-500-ml</product_url>
+    <description>&lt;p&gt;Balão esférico com fundo redondo esmerilado: Ideal para laboratórios, oferece estabilidade e resistência térmica. Perfeito para misturas e reações químicas. Fabricado em vidro de alta qualidade com fundo esmerilado para maior aderência em superfícies. Essencial para experiências precisas e seguras.&lt;/p&gt;
+&lt;!----&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/files/ObtenerImagen_024e01fe-96ae-45c7-a0b9-db921f41332c.jpg?v=1722525331</image_url>
+    <size>N/A</size>
+    <weight>0.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>N/A</upc_ean>
+    <reference>18015252</reference>
+    <brand>Auxilab, S.L.</brand>
+    <category>Balão</category>
+    <designation>Balão esférico c/ fundo redondo esmerilado 500mL</designation>
+    <regular_price>14.23€</regular_price>
+    <current_price>14.23€</current_price>
+    <availability>in stock</availability>
+    <stock>7</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/balao-esferico-c-fundo-redondo-esm-2429-500-ml</product_url>
+    <description>&lt;p&gt;Balão esférico com fundo redondo esmerilado: Ideal para laboratórios, oferece estabilidade e resistência térmica. Perfeito para misturas e reações químicas. Fabricado em vidro de alta qualidade com fundo esmerilado para maior aderência em superfícies. Essencial para experiências precisas e seguras.&lt;/p&gt;
+&lt;!----&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/files/ObtenerImagen_024e01fe-96ae-45c7-a0b9-db921f41332c.jpg?v=1722525331</image_url>
+    <size>N/A</size>
+    <weight>0.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>N/A</upc_ean>
+    <reference>18015253</reference>
+    <brand>Auxilab, S.L.</brand>
+    <category>Balão</category>
+    <designation>Balão esférico c/ fundo redondo esmerilado 500mL</designation>
+    <regular_price>14.62€</regular_price>
+    <current_price>14.62€</current_price>
+    <availability>in stock</availability>
+    <stock>1</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/balao-esferico-c-fundo-redondo-esm-2429-500-ml</product_url>
+    <description>&lt;p&gt;Balão esférico com fundo redondo esmerilado: Ideal para laboratórios, oferece estabilidade e resistência térmica. Perfeito para misturas e reações químicas. Fabricado em vidro de alta qualidade com fundo esmerilado para maior aderência em superfícies. Essencial para experiências precisas e seguras.&lt;/p&gt;
+&lt;!----&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/files/ObtenerImagen_024e01fe-96ae-45c7-a0b9-db921f41332c.jpg?v=1722525331</image_url>
+    <size>N/A</size>
+    <weight>0.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>N/A</upc_ean>
+    <reference>18015225</reference>
+    <brand>Auxilab, S.L.</brand>
+    <category>Balão</category>
+    <designation>Balão esférico c/ fundo redondo esmerilado 500mL</designation>
+    <regular_price>16.09€</regular_price>
+    <current_price>16.09€</current_price>
+    <availability>in stock</availability>
+    <stock>9</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/balao-esferico-c-fundo-redondo-esm-2429-500-ml</product_url>
+    <description>&lt;p&gt;Balão esférico com fundo redondo esmerilado: Ideal para laboratórios, oferece estabilidade e resistência térmica. Perfeito para misturas e reações químicas. Fabricado em vidro de alta qualidade com fundo esmerilado para maior aderência em superfícies. Essencial para experiências precisas e seguras.&lt;/p&gt;
+&lt;!----&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/files/ObtenerImagen_024e01fe-96ae-45c7-a0b9-db921f41332c.jpg?v=1722525331</image_url>
+    <size>N/A</size>
+    <weight>0.0 kg</weight>
     <quantiy>1</quantiy>
     <color>N/A</color>
     <aux>N/A</aux>
@@ -2778,7 +2878,7 @@
     <regular_price>4.58€</regular_price>
     <current_price>4.58€</current_price>
     <availability>in stock</availability>
-    <stock>10</stock>
+    <stock>7</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -2815,6 +2915,42 @@
     <current_price>5.91€</current_price>
     <availability>in stock</availability>
     <stock>4</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/balao-volumetrico-classe-a</product_url>
+    <description>&lt;h1&gt;Balão volumétrico classe A&lt;/h1&gt;
+&lt;p&gt;Balão volumétrico classe A com vidro transparente com rolha de plástico. Ideal para medir com precisão os volumes, bem como preparar soluções de concentração exata. Adequado para ser utilizado em laboratórios de química e biologia. Não é adequado para o aquecimento de substâncias.&lt;/p&gt;
+&lt;p&gt;Este balão de laboratório de fundo plano é um recipiente indispensável em qualquer laboratório escolar ou universitário. Capacidades disponíveis de 10 mL a 2000 mL.&lt;/p&gt;
+&lt;h1&gt;&lt;strong&gt;Características&lt;/strong&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Fabricado em vidro transparente e tampa em plástico;&lt;/li&gt;
+&lt;li&gt;Mede com exatidão o volume a preparar&lt;/li&gt;
+&lt;li&gt;Boca esmerilada&lt;/li&gt;
+&lt;li&gt;Tolerância: 0, 060 mL&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;Capacidades: 10 mL a 2000 mL&lt;/li&gt;
+&lt;li&gt;Cumpre os requisitos da norma ISO 1042.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/balao-volumetrico-1000ml.jpg?v=1629277597</image_url>
+    <size>N/A</size>
+    <weight>1.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>DDB008</upc_ean>
+    <reference>LB0022</reference>
+    <brand>Auxilab, S.L.</brand>
+    <category>Balão</category>
+    <designation>Balão volumétrico classe A 500mL</designation>
+    <regular_price>9.30€</regular_price>
+    <current_price>9.30€</current_price>
+    <availability>in stock</availability>
+    <stock>1</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -4369,6 +4505,31 @@ Características:&lt;/p&gt;
     <aux>N/A</aux>
   </product>
   <product>
+    <upc_ean>N/A</upc_ean>
+    <reference>TU0009</reference>
+    <brand>Nowa Szkola</brand>
+    <category>Boneco</category>
+    <designation>Boneca bebé c/ acessórios de banho</designation>
+    <regular_price>19.99€</regular_price>
+    <current_price>19.99€</current_price>
+    <availability>in stock</availability>
+    <stock>1</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/boneca-bebe-c-acessorios-de-banho</product_url>
+    <description>&lt;p&gt;Boneca Bebé com Acessórios de Banho: Inclui boneca bebé adorável e um conjunto completo de acessórios de banho, como banheira, toalha e brinquedos. Perfeito para brincadeiras de faz de conta, estimulando a imaginação e o cuidado. Feita de materiais seguros, garante horas de diversão para as crianças.&lt;/p&gt;
+&lt;!----&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/files/1.webp?v=1723130170</image_url>
+    <size>N/A</size>
+    <weight>0.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
     <upc_ean>31008</upc_ean>
     <reference>31008</reference>
     <brand>Miniland, S.A.</brand>
@@ -4662,7 +4823,7 @@ Características:&lt;/p&gt;
     <regular_price>0.03€</regular_price>
     <current_price>0.03€</current_price>
     <availability>in stock</availability>
-    <stock>2478</stock>
+    <stock>2476</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -4928,6 +5089,33 @@ Modelos de papel E 1: 1 incluídos&lt;/p&gt;</description>
   &lt;p&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Várias capacidades disponíveis. &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
   &lt;p&gt; &lt;/p&gt;</description>
     <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/bureta-graduada-com-torneira-de-vidro-classe-a.jpg?v=1626340544</image_url>
+    <size>N/A</size>
+    <weight>1.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>DNB008</upc_ean>
+    <reference>LB0409</reference>
+    <brand>Auxilab, S.L.</brand>
+    <category>Bureta</category>
+    <designation>Bureta graduada com torneira teflón classe A 25 ml</designation>
+    <regular_price>28.29€</regular_price>
+    <current_price>28.29€</current_price>
+    <availability>in stock</availability>
+    <stock>3</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/bureta-graduada-com-torneira-teflon-classe-a</product_url>
+    <description>&lt;h1&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Bureta graduada com torneira teflón &lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
+  &lt;p&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Bureta graduada com torneira teflón ideal para a adição de soluções ácidas ou neutras.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;As buretas são instrumentos de alta precisão usados para a adição de volumes líquidos. Possui uma estrutura cilíndrica, estreita e com uma torneira na extremidade inferior que lhe permite controlar com exatidão a quantidade de solução. &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Fabricada em vidro temperado.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/bureta-graduada-com-torneira-teflon-classe-a.jpg?v=1629282350</image_url>
     <size>N/A</size>
     <weight>1.0 kg</weight>
     <quantiy>1</quantiy>
@@ -5249,7 +5437,7 @@ Modelos de papel E 1: 1 incluídos&lt;/p&gt;</description>
     <regular_price>3.36€</regular_price>
     <current_price>3.36€</current_price>
     <availability>in stock</availability>
-    <stock>15</stock>
+    <stock>13</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -6722,7 +6910,7 @@ Modelos de papel E 1: 1 incluídos&lt;/p&gt;</description>
     <regular_price>1.41€</regular_price>
     <current_price>1.41€</current_price>
     <availability>in stock</availability>
-    <stock>10</stock>
+    <stock>9</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -6780,7 +6968,7 @@ Modelos de papel E 1: 1 incluídos&lt;/p&gt;</description>
     <regular_price>32.76€</regular_price>
     <current_price>32.76€</current_price>
     <availability>in stock</availability>
-    <stock>6</stock>
+    <stock>5</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -6809,7 +6997,7 @@ Modelos de papel E 1: 1 incluídos&lt;/p&gt;</description>
     <regular_price>4.25€</regular_price>
     <current_price>4.25€</current_price>
     <availability>in stock</availability>
-    <stock>13</stock>
+    <stock>12</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -7559,38 +7747,6 @@ Modelos de papel E 1: 1 incluídos&lt;/p&gt;</description>
     <aux>N/A</aux>
   </product>
   <product>
-    <upc_ean>BRB002</upc_ean>
-    <reference>LB0089</reference>
-    <brand>Auxilab, S.L.</brand>
-    <category>Caixas de Petri</category>
-    <designation>Caixas de Petri em vidro Ø 60 mm - 15 mm altura</designation>
-    <regular_price>2.02€</regular_price>
-    <current_price>2.02€</current_price>
-    <availability>in stock</availability>
-    <stock>7</stock>
-    <norma_shipping_cost>4.5 €</norma_shipping_cost>
-    <min_delivery_time>1</min_delivery_time>
-    <max_delivery_time>14</max_delivery_time>
-    <min_preparation_time>1</min_preparation_time>
-    <max_preparation_time>14</max_preparation_time>
-    <product_url>https://abcescolar.pt/products/caixas-de-petri</product_url>
-    <description>&lt;h1&gt;Caixas de Petri&lt;/h1&gt;
- &lt;p&gt;Caixas de Petri fabricadas em vidro são especialmente indicadas para estudar cultivos de cristais, bactérias, etc.&lt;/p&gt;
- &lt;p&gt;O seu fundo plano facilita a análise e colheita dos cultivos. &lt;/p&gt;
- &lt;h2&gt;&lt;strong&gt;Características&lt;/strong&gt;&lt;/h2&gt;
- &lt;ul&gt;
- &lt;li&gt;Elevada transparência&lt;/li&gt;
- &lt;li&gt;Diâmetro: 100 mm&lt;/li&gt;
- &lt;li&gt;Altura: 15 mm&lt;/li&gt;
- &lt;/ul&gt;</description>
-    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/caixa-de-petri.jpg?v=1629300701</image_url>
-    <size>N/A</size>
-    <weight>0.1 kg</weight>
-    <quantiy>1</quantiy>
-    <color>N/A</color>
-    <aux>N/A</aux>
-  </product>
-  <product>
     <upc_ean>BRB003</upc_ean>
     <reference>LB0090</reference>
     <brand>Auxilab, S.L.</brand>
@@ -7695,7 +7851,7 @@ Modelos de papel E 1: 1 incluídos&lt;/p&gt;</description>
     <regular_price>3.71€</regular_price>
     <current_price>3.71€</current_price>
     <availability>in stock</availability>
-    <stock>40</stock>
+    <stock>38</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -7990,6 +8146,86 @@ Modelos de papel E 1: 1 incluídos&lt;/p&gt;</description>
     <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/camiao-carga.jpg?v=1637602124</image_url>
     <size>N/A</size>
     <weight>1.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>N/A</upc_ean>
+    <reference>VIRTEE-M</reference>
+    <brand>Curiscope</brand>
+    <category>Camisola</category>
+    <designation>Camisola para realidade aumentada M</designation>
+    <regular_price>45.23€</regular_price>
+    <current_price>45.23€</current_price>
+    <availability>in stock</availability>
+    <stock>2</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/camisola-virtuali-tee</product_url>
+    <description>&lt;h1&gt;Camisola Virtuali-Tee para realidade aumentada&lt;/h1&gt;
+&lt;p&gt;Uma camisola de realidade aumentada que ajuda as crianças e jovens a compreender o corpo humano e todo o seu funcionamento. &lt;/p&gt;
+&lt;h2 style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;&lt;strong&gt;Inclui APP Gratuita&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;strong data-mce-fragment=&quot;1&quot;&gt;Inclui APP Gratuita&lt;/strong&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt; para Android e IOS. Este é o recurso educacional STEM perfeito para o ensino das ciências em casa ou na escola.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;
+&lt;strong&gt;&lt;/strong&gt;&lt;strong&gt;Dentro do corpo humano!&lt;/strong&gt;
+&lt;/h2&gt;
+&lt;p style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;Ninguém consegue resistir à aprendizagem da ciência de forma tão real! Esta camisola permite fazer viagens a todo o corpo humano, desde os pulmões à corrente sanguínea.&lt;/p&gt;
+&lt;p style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;Vários tamanhos disponíveis!&lt;/p&gt;
+&lt;p style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;&lt;iframe title=&quot;YouTube video player&quot; src=&quot;https://www.youtube.com/embed/FPkcFt-PYOI&quot; height=&quot;315&quot; width=&quot;560&quot; allowfullscreen=&quot;&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;&lt;strong&gt;Tamanhos: &lt;/strong&gt;&lt;/p&gt;
+&lt;ul style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;
+&lt;li&gt;M - 7/8 Anos&lt;/li&gt;
+&lt;li&gt;L - 9/11 Anos&lt;/li&gt;
+&lt;li&gt;XL - 12/14 Anos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt; &lt;/p&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/t-shirt-virtualtee-realidade-aumentada.jpg?v=1622645073</image_url>
+    <size>N/A</size>
+    <weight>0.5 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>N/A</upc_ean>
+    <reference>VIRTEE-L</reference>
+    <brand>Curiscope</brand>
+    <category>Camisola</category>
+    <designation>Camisola para realidade aumentada L</designation>
+    <regular_price>45.23€</regular_price>
+    <current_price>45.23€</current_price>
+    <availability>in stock</availability>
+    <stock>2</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/camisola-virtuali-tee</product_url>
+    <description>&lt;h1&gt;Camisola Virtuali-Tee para realidade aumentada&lt;/h1&gt;
+&lt;p&gt;Uma camisola de realidade aumentada que ajuda as crianças e jovens a compreender o corpo humano e todo o seu funcionamento. &lt;/p&gt;
+&lt;h2 style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;&lt;strong&gt;Inclui APP Gratuita&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;strong data-mce-fragment=&quot;1&quot;&gt;Inclui APP Gratuita&lt;/strong&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt; para Android e IOS. Este é o recurso educacional STEM perfeito para o ensino das ciências em casa ou na escola.&lt;/span&gt;&lt;/p&gt;
+&lt;h2 style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;
+&lt;strong&gt;&lt;/strong&gt;&lt;strong&gt;Dentro do corpo humano!&lt;/strong&gt;
+&lt;/h2&gt;
+&lt;p style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;Ninguém consegue resistir à aprendizagem da ciência de forma tão real! Esta camisola permite fazer viagens a todo o corpo humano, desde os pulmões à corrente sanguínea.&lt;/p&gt;
+&lt;p style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;Vários tamanhos disponíveis!&lt;/p&gt;
+&lt;p style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;&lt;iframe title=&quot;YouTube video player&quot; src=&quot;https://www.youtube.com/embed/FPkcFt-PYOI&quot; height=&quot;315&quot; width=&quot;560&quot; allowfullscreen=&quot;&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;&lt;strong&gt;Tamanhos: &lt;/strong&gt;&lt;/p&gt;
+&lt;ul style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt;
+&lt;li&gt;M - 7/8 Anos&lt;/li&gt;
+&lt;li&gt;L - 9/11 Anos&lt;/li&gt;
+&lt;li&gt;XL - 12/14 Anos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;text-align: left;&quot; data-mce-style=&quot;text-align: left;&quot;&gt; &lt;/p&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/t-shirt-virtualtee-realidade-aumentada.jpg?v=1622645073</image_url>
+    <size>N/A</size>
+    <weight>0.5 kg</weight>
     <quantiy>1</quantiy>
     <color>N/A</color>
     <aux>N/A</aux>
@@ -9055,8 +9291,8 @@ Ferramentas:
     <brand>Nowa Szkola</brand>
     <category>Catre</category>
     <designation>Catre empilhável Verde</designation>
-    <regular_price>60.00€</regular_price>
-    <current_price>60.00€</current_price>
+    <regular_price>73.75€</regular_price>
+    <current_price>73.75€</current_price>
     <availability>in stock</availability>
     <stock>2</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
@@ -9240,7 +9476,7 @@ Ferramentas:
     <regular_price>21.89€</regular_price>
     <current_price>21.89€</current_price>
     <availability>in stock</availability>
-    <stock>1</stock>
+    <stock>3</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -9313,7 +9549,7 @@ Medidas: 400 x 300 mm.
     <regular_price>2.83€</regular_price>
     <current_price>2.83€</current_price>
     <availability>in stock</availability>
-    <stock>79</stock>
+    <stock>73</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -9337,7 +9573,7 @@ Medidas: 400 x 300 mm.
     <regular_price>0.07€</regular_price>
     <current_price>0.07€</current_price>
     <availability>in stock</availability>
-    <stock>60</stock>
+    <stock>57</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -9619,7 +9855,7 @@ Medidas: 400 x 300 mm.
     <regular_price>7.52€</regular_price>
     <current_price>7.52€</current_price>
     <availability>in stock</availability>
-    <stock>3</stock>
+    <stock>2</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -10660,7 +10896,7 @@ Medidas: 400 x 300 mm.
     <regular_price>24.51€</regular_price>
     <current_price>24.51€</current_price>
     <availability>in stock</availability>
-    <stock>3</stock>
+    <stock>2</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -12493,6 +12729,38 @@ Fornecido em caixa de plástico.&lt;br&gt;</description>
     <aux>N/A</aux>
   </product>
   <product>
+    <upc_ean>61096</upc_ean>
+    <reference>CN0003</reference>
+    <brand>Commotion (Europe) B.V.</brand>
+    <category>Lupa</category>
+    <designation>Conjunto de 6 lupas de mão coloridas</designation>
+    <regular_price>27.68€</regular_price>
+    <current_price>27.68€</current_price>
+    <availability>in stock</availability>
+    <stock>8</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/conjunto-de-6-lupas-de-mao-coloridas</product_url>
+    <description>&lt;h1&gt;Conjunto de 6 lupas de mão coloridas&lt;/h1&gt;
+ &lt;p&gt;Conjunto de 6 lupas de mão coloridas de 60mm Ø, fabricadas em plástico. Ideal para serem utilizadas por crianças para que observem e investiguem insetos, folhas e padrões da Natureza. A sua lente tem uma ampliação de 3x.&lt;/p&gt;
+ &lt;p&gt;Pode ser usada por grupos de alunos para desenvolverem a sua capacidade de trabalho em equipa.&lt;/p&gt;
+ &lt;h2&gt;
+ &lt;br&gt; Suporta as seguintes áreas de aprendizagem&lt;/h2&gt;
+ &lt;p&gt;• Compreender a observação mundial e observação de objetos&lt;br&gt; • Desenvolvimento Pessoal - jogo colaborativo&lt;br&gt; • Comunicação e Linguagem - linguagem descritiva&lt;/p&gt;
+ &lt;h2&gt;Características&lt;/h2&gt;
+ &lt;p&gt;Diâmetro: 80 mm&lt;br&gt; L: 162 mm&lt;br&gt; D: 16 mm.&lt;br&gt; Idade recomendada: 3+&lt;/p&gt;
+ &lt;p&gt;Encontre outros produtos para o ensino das ciências aqui.&lt;/p&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/lupa-de-mao-60-mm-em-plastico-coloridas-de-aumento-3x-6-unidades.jpg?v=1627040135</image_url>
+    <size>N/A</size>
+    <weight>1.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
     <upc_ean>N/A</upc_ean>
     <reference>BG0109</reference>
     <brand>EISCO - Electronic Instrumentation</brand>
@@ -13518,7 +13786,7 @@ Fornecido em caixa de plástico.&lt;br&gt;</description>
     <regular_price>7.17€</regular_price>
     <current_price>7.17€</current_price>
     <availability>in stock</availability>
-    <stock>8</stock>
+    <stock>2</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -14185,38 +14453,7 @@ Fornecido em caixa de plástico.&lt;br&gt;</description>
     <regular_price>0.96€</regular_price>
     <current_price>0.96€</current_price>
     <availability>in stock</availability>
-    <stock>13</stock>
-    <norma_shipping_cost>4.5 €</norma_shipping_cost>
-    <min_delivery_time>1</min_delivery_time>
-    <max_delivery_time>14</max_delivery_time>
-    <min_preparation_time>1</min_preparation_time>
-    <max_preparation_time>14</max_preparation_time>
-    <product_url>https://abcescolar.pt/products/copo-precipitacao-forma-baixa</product_url>
-    <description>&lt;h1&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Copo de precipitação forma baixa&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Copo de precipitação forma baixa ideal para utilização em contexto escolar. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Material altamente resistente, fabricado em vidro borosilicato.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Com este utensílio, é possível armazenar líquidos e substâncias para obter soluções a partir de diferentes reações químicas. Também chamado de gobelé. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Cumpre os requisitos com uma norma ISO 3819&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Características: &lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Capacidade: várias disponíveis&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Diâmetro: consoante a capacidade&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Altura: consoante a capacidade&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
-    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/copo-precipitacao-forma-baixa-1000ml.jpg?v=1629305980</image_url>
-    <size>N/A</size>
-    <weight>1.0 kg</weight>
-    <quantiy>1</quantiy>
-    <color>N/A</color>
-    <aux>N/A</aux>
-  </product>
-  <product>
-    <upc_ean>CBC016</upc_ean>
-    <reference>CBC016</reference>
-    <brand>Auxilab, S.L.</brand>
-    <category>Copo de Precipitação</category>
-    <designation>Copo de precipitação forma baixa 50 ml</designation>
-    <regular_price>1.09€</regular_price>
-    <current_price>1.09€</current_price>
-    <availability>in stock</availability>
-    <stock>8</stock>
+    <stock>3</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -14278,7 +14515,7 @@ Fornecido em caixa de plástico.&lt;br&gt;</description>
     <regular_price>1.23€</regular_price>
     <current_price>1.23€</current_price>
     <availability>in stock</availability>
-    <stock>7</stock>
+    <stock>2</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -14309,7 +14546,7 @@ Fornecido em caixa de plástico.&lt;br&gt;</description>
     <regular_price>2.03€</regular_price>
     <current_price>2.03€</current_price>
     <availability>in stock</availability>
-    <stock>53</stock>
+    <stock>50</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -14371,7 +14608,7 @@ Fornecido em caixa de plástico.&lt;br&gt;</description>
     <regular_price>2.41€</regular_price>
     <current_price>2.41€</current_price>
     <availability>in stock</availability>
-    <stock>10</stock>
+    <stock>8</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -14433,7 +14670,7 @@ Fornecido em caixa de plástico.&lt;br&gt;</description>
     <regular_price>4.33€</regular_price>
     <current_price>4.33€</current_price>
     <availability>in stock</availability>
-    <stock>4</stock>
+    <stock>2</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -14876,7 +15113,33 @@ Fornecido em caixa de plástico.&lt;br&gt;</description>
     <regular_price>3.99€</regular_price>
     <current_price>3.99€</current_price>
     <availability>in stock</availability>
-    <stock>5</stock>
+    <stock>4</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/corante-alimentar</product_url>
+    <description>&lt;p&gt;Colorant alimentaire E131&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Especificação :&lt;br&gt; Odor : inodore&lt;/p&gt;
+&lt;p&gt;&lt;a title=&quot;Ficha de segurança&quot; href=&quot;https://cdn.shopify.com/s/files/1/0555/4277/5963/files/20200.60M.pdf?v=1621009006&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn.shopify.com/s/files/1/0555/4277/5963/files/ficha-seguranca_240x240.png?v=1621009674&quot;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/woocommerce-placeholder_96c6c3d8-865f-42b8-8012-a427d5070eac.png?v=1619617386</image_url>
+    <size>N/A</size>
+    <weight>0.1 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>SR149.60ML</upc_ean>
+    <reference>20197.60M</reference>
+    <brand>Sordalab</brand>
+    <category>Corante</category>
+    <designation>Corante alimentar Azul</designation>
+    <regular_price>3.99€</regular_price>
+    <current_price>3.99€</current_price>
+    <availability>in stock</availability>
+    <stock>4</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -14902,7 +15165,7 @@ Fornecido em caixa de plástico.&lt;br&gt;</description>
     <regular_price>3.99€</regular_price>
     <current_price>3.99€</current_price>
     <availability>in stock</availability>
-    <stock>5</stock>
+    <stock>4</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -14928,7 +15191,7 @@ Fornecido em caixa de plástico.&lt;br&gt;</description>
     <regular_price>3.99€</regular_price>
     <current_price>3.99€</current_price>
     <availability>in stock</availability>
-    <stock>3</stock>
+    <stock>2</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -15037,7 +15300,7 @@ Fornecido em caixa de plástico.&lt;br&gt;</description>
     <regular_price>11.05€</regular_price>
     <current_price>11.05€</current_price>
     <availability>in stock</availability>
-    <stock>8</stock>
+    <stock>4</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -16114,46 +16377,12 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
   </product>
   <product>
     <upc_ean>N/A</upc_ean>
-    <reference>PH0036PRD</reference>
-    <brand>EISCO - Electronic Instrumentation</brand>
-    <category>Dinamómetros</category>
-    <designation>Dinamómetro gama Premium acrílico 2N</designation>
-    <regular_price>15.51€</regular_price>
-    <current_price>15.51€</current_price>
-    <availability>in stock</availability>
-    <stock>18</stock>
-    <norma_shipping_cost>4.5 €</norma_shipping_cost>
-    <min_delivery_time>1</min_delivery_time>
-    <max_delivery_time>14</max_delivery_time>
-    <min_preparation_time>1</min_preparation_time>
-    <max_preparation_time>14</max_preparation_time>
-    <product_url>https://abcescolar.pt/products/dinamometro-gama-premium-acrilico</product_url>
-    <description>&lt;h2&gt;&lt;span&gt;Dinamómetro gama Premium acrílico&lt;/span&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;span&gt;Um dinamómetro é um instrumento usado para a medição de forças mecânicas.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;Internamente, a maioria dos dinamômetros são dotados de uma &lt;/span&gt;mola&lt;span data-mce-fragment=&quot;1&quot;&gt; que se distende à medida que se aplica a ele uma força.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;Esse equipamento ainda mensura o comportamento da carga alargada ou tensão por deformação, de uma mola, deslocamento do ar, ou extensão de ligas metálicas, que compreenderá em determinar o coeficiente de fricção entre os materiais.&lt;/span&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;Características&lt;/span&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fabricado em acrílico.&lt;/li&gt;
-&lt;li&gt;Escala em gramas e Newtons.&lt;/li&gt;
-&lt;li&gt;Alta resolução com mola em hélice de aço inox.&lt;/li&gt;
-&lt;li&gt;Ajuste a zero incorporado.&lt;/li&gt;
-&lt;/ul&gt;</description>
-    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/dinamometro-10n.jpg?v=1619608191</image_url>
-    <size>N/A</size>
-    <weight>100.0 g</weight>
-    <quantiy>1</quantiy>
-    <color>N/A</color>
-    <aux>N/A</aux>
-  </product>
-  <product>
-    <upc_ean>N/A</upc_ean>
     <reference>PH0036AALPRM</reference>
     <brand>EISCO - Electronic Instrumentation</brand>
     <category/>
     <designation>Dinamómetro gama Premium alumínio 1N</designation>
-    <regular_price>124.71€</regular_price>
-    <current_price>124.71€</current_price>
+    <regular_price>25.52€</regular_price>
+    <current_price>25.52€</current_price>
     <availability>in stock</availability>
     <stock>7</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
@@ -16179,8 +16408,8 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
     <brand>EISCO - Electronic Instrumentation</brand>
     <category/>
     <designation>Dinamómetro gama Premium alumínio 2.5N</designation>
-    <regular_price>124.71€</regular_price>
-    <current_price>124.71€</current_price>
+    <regular_price>25.52€</regular_price>
+    <current_price>25.52€</current_price>
     <availability>in stock</availability>
     <stock>10</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
@@ -16206,8 +16435,8 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
     <brand>EISCO - Electronic Instrumentation</brand>
     <category/>
     <designation>Dinamómetro gama Premium alumínio 5N</designation>
-    <regular_price>124.71€</regular_price>
-    <current_price>124.71€</current_price>
+    <regular_price>25.52€</regular_price>
+    <current_price>25.52€</current_price>
     <availability>in stock</availability>
     <stock>14</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
@@ -16233,8 +16462,8 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
     <brand>EISCO - Electronic Instrumentation</brand>
     <category/>
     <designation>Dinamómetro gama Premium alumínio 10N</designation>
-    <regular_price>124.71€</regular_price>
-    <current_price>124.71€</current_price>
+    <regular_price>25.52€</regular_price>
+    <current_price>25.52€</current_price>
     <availability>in stock</availability>
     <stock>9</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
@@ -16260,8 +16489,8 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
     <brand>EISCO - Electronic Instrumentation</brand>
     <category/>
     <designation>Dinamómetro gama Premium alumínio 20N</designation>
-    <regular_price>124.71€</regular_price>
-    <current_price>124.71€</current_price>
+    <regular_price>25.52€</regular_price>
+    <current_price>25.52€</current_price>
     <availability>in stock</availability>
     <stock>14</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
@@ -16287,8 +16516,8 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
     <brand>EISCO - Electronic Instrumentation</brand>
     <category/>
     <designation>Dinamómetro gama Premium alumínio 50N</designation>
-    <regular_price>124.71€</regular_price>
-    <current_price>124.71€</current_price>
+    <regular_price>25.52€</regular_price>
+    <current_price>25.52€</current_price>
     <availability>in stock</availability>
     <stock>11</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
@@ -16431,7 +16660,7 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
     <regular_price>0.05€</regular_price>
     <current_price>0.05€</current_price>
     <availability>in stock</availability>
-    <stock>13</stock>
+    <stock>3</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -17691,7 +17920,7 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
     <regular_price>6.46€</regular_price>
     <current_price>6.46€</current_price>
     <availability>in stock</availability>
-    <stock>15</stock>
+    <stock>14</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -17933,8 +18162,8 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
     <brand>Auxilab, S.L.</brand>
     <category>Esguicho</category>
     <designation>Esguicho de plástico 100 ml</designation>
-    <regular_price>3.33€</regular_price>
-    <current_price>3.33€</current_price>
+    <regular_price>2.81€</regular_price>
+    <current_price>2.81€</current_price>
     <availability>in stock</availability>
     <stock>20</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
@@ -17966,10 +18195,10 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
     <brand>Auxilab, S.L.</brand>
     <category>Esguicho</category>
     <designation>Esguicho de plástico 250 ml</designation>
-    <regular_price>3.97€</regular_price>
-    <current_price>3.97€</current_price>
+    <regular_price>3.08€</regular_price>
+    <current_price>3.08€</current_price>
     <availability>in stock</availability>
-    <stock>18</stock>
+    <stock>8</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -17999,10 +18228,10 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
     <brand>Auxilab, S.L.</brand>
     <category>Esguicho</category>
     <designation>Esguicho de plástico 500 ml</designation>
-    <regular_price>4.24€</regular_price>
-    <current_price>4.24€</current_price>
+    <regular_price>3.61€</regular_price>
+    <current_price>3.61€</current_price>
     <availability>in stock</availability>
-    <stock>13</stock>
+    <stock>12</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -18260,7 +18489,7 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
     <regular_price>1.92€</regular_price>
     <current_price>1.92€</current_price>
     <availability>in stock</availability>
-    <stock>14</stock>
+    <stock>10</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -18356,7 +18585,7 @@ Bateria de lítio ou bateria semelhante (não incluída).&lt;/p&gt;</description
     <regular_price>2.17€</regular_price>
     <current_price>2.17€</current_price>
     <availability>in stock</availability>
-    <stock>44</stock>
+    <stock>34</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -19861,10 +20090,10 @@ Características:&lt;/p&gt;
     <brand>Commotion (Europe) B.V.</brand>
     <category/>
     <designation>Fita métrica de 1m</designation>
-    <regular_price>0.98€</regular_price>
-    <current_price>0.98€</current_price>
+    <regular_price>9.98€</regular_price>
+    <current_price>9.98€</current_price>
     <availability>in stock</availability>
-    <stock>5</stock>
+    <stock>79</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -20877,7 +21106,7 @@ Características:&lt;/p&gt;
     <regular_price>18.31€</regular_price>
     <current_price>18.31€</current_price>
     <availability>in stock</availability>
-    <stock>8</stock>
+    <stock>7</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -20970,7 +21199,7 @@ Características:&lt;/p&gt;
     <regular_price>2.15€</regular_price>
     <current_price>2.15€</current_price>
     <availability>in stock</availability>
-    <stock>3</stock>
+    <stock>4</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -22173,6 +22402,30 @@ Características:&lt;/p&gt;
     <aux>N/A</aux>
   </product>
   <product>
+    <upc_ean>50205</upc_ean>
+    <reference>CN0113</reference>
+    <brand>Commotion (Europe) B.V.</brand>
+    <category>Íman</category>
+    <designation>Íman em barra com marcação N e S 9x9x4 mm (20 unidades)</designation>
+    <regular_price>17.71€</regular_price>
+    <current_price>17.71€</current_price>
+    <availability>in stock</availability>
+    <stock>8</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/iman-em-barra-com-marcacao-n-e-s</product_url>
+    <description>&lt;p&gt;Íman desenhado para o estudo do magnetismo de forma simples e apelativa.&lt;/p&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/iman-em-barra-com-marcacao-n-e-s-com-9x9x4-mm-20-unidades.jpg?v=1619620471</image_url>
+    <size>N/A</size>
+    <weight>1.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
     <upc_ean>50133</upc_ean>
     <reference>CN0102</reference>
     <brand>Commotion (Europe) B.V.</brand>
@@ -22375,7 +22628,7 @@ Características:&lt;/p&gt;
     <regular_price>14.85€</regular_price>
     <current_price>14.85€</current_price>
     <availability>in stock</availability>
-    <stock>5</stock>
+    <stock>3</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -22513,7 +22766,7 @@ Características:&lt;/p&gt;
   </product>
   <product>
     <upc_ean>N/A</upc_ean>
-    <reference>PH1000A-1</reference>
+    <reference>PH1000A</reference>
     <brand>EISCO - Electronic Instrumentation</brand>
     <category>Interruptores</category>
     <designation>Interruptores tipo faca Unidirecional</designation>
@@ -23246,7 +23499,7 @@ Características:&lt;/p&gt;
     <regular_price>22.00€</regular_price>
     <current_price>22.00€</current_price>
     <availability>in stock</availability>
-    <stock>2</stock>
+    <stock>1</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -23808,38 +24061,6 @@ Jogo divertido que demonstra 54 fotos de diferentes alimentos.&lt;/div&gt;
     <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/kit-basic-starter-v2-sem-placa.jpg?v=1641985536</image_url>
     <size>N/A</size>
     <weight>1.0 kg</weight>
-    <quantiy>1</quantiy>
-    <color>N/A</color>
-    <aux>N/A</aux>
-  </product>
-  <product>
-    <upc_ean>N/A</upc_ean>
-    <reference>BKEPH2014</reference>
-    <brand>EISCO - Electronic Instrumentation</brand>
-    <category>Kits</category>
-    <designation>Kit básico de eletricidade</designation>
-    <regular_price>98.40€</regular_price>
-    <current_price>98.40€</current_price>
-    <availability>in stock</availability>
-    <stock>1</stock>
-    <norma_shipping_cost>6.99 €</norma_shipping_cost>
-    <min_delivery_time>1</min_delivery_time>
-    <max_delivery_time>14</max_delivery_time>
-    <min_preparation_time>1</min_preparation_time>
-    <max_preparation_time>14</max_preparation_time>
-    <product_url>https://abcescolar.pt/products/kit-basico-de-eletricidade</product_url>
-    <description>&lt;h2&gt;Kit básico de eletricidade&lt;br&gt;
-&lt;/h2&gt;
-&lt;p&gt;Este kit básico de eletricidade possibilita a exploração de temas como a iluminação de uma lâmpada, usando um interruptor; lâmpadas em série e em paralelo; condutores e isoladores, usando motores e modelo de casa.&lt;/p&gt;
-&lt;p&gt;Montado em bases de plástico, com terminais de 4 mm.&lt;/p&gt;
-&lt;p&gt;Permite a realização de várias atividades práticas que vão de encontro às metas curriculares do 9.º ano de escolaridade.&lt;/p&gt;
-&lt;h3&gt;Inclui&lt;br&gt;
-&lt;/h3&gt;
-&lt;p&gt;6 suportes de pilhas (pilhas não incluídas);&lt;br&gt;6 suportes de lâmpada;&lt;br&gt;6 lâmpadas;&lt;br&gt;3 interruptores on-off;&lt;br&gt;2 Interruptores bidirecionais;&lt;br&gt;1 campainha;&lt;br&gt;1 motor;&lt;br&gt;1 bobina de fio cromoníquel;&lt;br&gt;10 fios de ligação com pinças de crocodilos.&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Fornecido com manual de instruções.&lt;/p&gt;</description>
-    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/Conjunto-de-electricidade-elementar-fisica-abc-escolar.jpg?v=1619478030</image_url>
-    <size>N/A</size>
-    <weight>5.0 kg</weight>
     <quantiy>1</quantiy>
     <color>N/A</color>
     <aux>N/A</aux>
@@ -24453,10 +24674,10 @@ Inclui:&lt;br&gt;
     <brand>Outlet</brand>
     <category>Kits</category>
     <designation>Kit de energia solar</designation>
-    <regular_price>18.20€</regular_price>
-    <current_price>18.20€</current_price>
+    <regular_price>26.50€</regular_price>
+    <current_price>26.50€</current_price>
     <availability>in stock</availability>
-    <stock>42</stock>
+    <stock>2</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -24756,35 +24977,6 @@ Inclui:&lt;br&gt;
     <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/kit-de-iniciacao-21-sensores-com-placa-arduino-ligacao-easy-keyestudio2.jpg?v=1644238542</image_url>
     <size>N/A</size>
     <weight>1.0 kg</weight>
-    <quantiy>1</quantiy>
-    <color>N/A</color>
-    <aux>N/A</aux>
-  </product>
-  <product>
-    <upc_ean>KS0072</upc_ean>
-    <reference>KS0072</reference>
-    <brand>Shenzhen KEYES DIY Robot co., Ltd (Keyestudio)</brand>
-    <category/>
-    <designation>Kit de iniciação Arduino Keyestudio - sem placa</designation>
-    <regular_price>27.24€</regular_price>
-    <current_price>27.24€</current_price>
-    <availability>in stock</availability>
-    <stock>1</stock>
-    <norma_shipping_cost>4.5 €</norma_shipping_cost>
-    <min_delivery_time>1</min_delivery_time>
-    <max_delivery_time>14</max_delivery_time>
-    <min_preparation_time>1</min_preparation_time>
-    <max_preparation_time>14</max_preparation_time>
-    <product_url>https://abcescolar.pt/products/kit-de-iniciacao-arduino-keyestudio</product_url>
-    <description>&lt;p&gt;Este Kit de iniciação foi desenvolvido a pensar naqueles que se querem iniciar no mundo do Arduino. Inclui uma seleção dos componentes eletrónicos mais úteis para realizar diversos projetos. Para ajudar o utilizador numa fase inicial, são disponibilizados 21 tutoriais de projetos básicos, como por exemplo o &quot;Semáforo&quot;, &quot;Controlo Remoto por infravermelho&quot;. Além disso, estes tutoriais incluem vídeos de demonstração do projeto, diagramas de conexão e os códigos de programação.&lt;br&gt;&lt;/p&gt;
-&lt;h3&gt;Inclui&lt;br&gt;
-&lt;/h3&gt;
-&lt;p&gt;5 LEDs Azuis&lt;br&gt; 5 LEDs Vermelhos&lt;br&gt; 5 LEDs Amarelos&lt;br&gt; 1 LED RGB&lt;br&gt; 5 Resistências 10K Ω&lt;br&gt; 5 Resistências 1K Ω&lt;br&gt; 8 Resistências 220K Ω&lt;br&gt; 1 Pot 10K Ω&lt;br&gt; 1 Display LED 7 segmentos 1 dígito&lt;br&gt; 1 Display LED segmentos 4 dígitos&lt;br&gt; 1 Matriz LED 8×8&lt;br&gt; 1 Buzzer Ativo&lt;br&gt; 1 Buzzer Passivo&lt;br&gt; 1 Sensor de Chama&lt;br&gt; 1 Recetor Infravermelho&lt;br&gt; 1 Controlo Remoto por Infravermelho&lt;br&gt; 1 Sensor de temperatura LM35&lt;br&gt; 2 Sensor de inclinação&lt;br&gt; 3 Resistências Foto&lt;br&gt; 4 Botões pequenos switch&lt;br&gt; 1 Dip 16 pinos IC 74HC595N&lt;br&gt; 1 Display LCD 16×2&lt;br&gt; 1 Servo 9g&lt;br&gt; 1 Breadboard 839 pinos&lt;br&gt; 1 conjunto de cabos jumper&lt;br&gt; 1 Suporte para pilhas&lt;br&gt; Placa controladora Arduino&lt;/p&gt;
-&lt;p&gt;&lt;br&gt; &lt;strong&gt;Tem três opções de adquirir este Kit de Iniciação:&lt;/strong&gt; com Placa Controladora Arduino UNO R3, com Placa Controladora Controladora MEGA 2560 ou sem placa controladora. Se já tem uma placa Arduino, poderá adquirir a versão sem placa controladora. &lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;📄 &lt;a href=&quot;https://cdn.shopify.com/s/files/1/0555/4277/5963/files/KS0072-programacao.txt?v=1650643877&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;&lt;strong&gt;Ver Programação&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</description>
-    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/Kit-de-iniciacao-Arduino-Keyestudio_40a44a79-729d-4e55-b3ce-6c08fc10ec1c.jpg?v=1639394186</image_url>
-    <size>N/A</size>
-    <weight>0.1 kg</weight>
     <quantiy>1</quantiy>
     <color>N/A</color>
     <aux>N/A</aux>
@@ -25203,7 +25395,7 @@ Inclui:&lt;br&gt;
     <regular_price>23.90€</regular_price>
     <current_price>23.90€</current_price>
     <availability>in stock</availability>
-    <stock>11</stock>
+    <stock>7</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -27073,7 +27265,7 @@ Dimensões: 90x90x30 mm&lt;/p&gt;</description>
     <regular_price>11.40€</regular_price>
     <current_price>11.40€</current_price>
     <availability>in stock</availability>
-    <stock>8</stock>
+    <stock>7</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -27108,7 +27300,7 @@ Dimensões: 90x90x30 mm&lt;/p&gt;</description>
     <regular_price>14.05€</regular_price>
     <current_price>14.05€</current_price>
     <availability>in stock</availability>
-    <stock>10</stock>
+    <stock>2</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -29253,6 +29445,67 @@ Medidas: 115 x 165 mm.&lt;/p&gt;
     <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/estufa.jpg?v=1652201080</image_url>
     <size>N/A</size>
     <weight>5.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>8413082972172</upc_ean>
+    <reference>97217</reference>
+    <brand>Miniland, S.A.</brand>
+    <category/>
+    <designation>Miniland Animatch 31 peças</designation>
+    <regular_price>38.86€</regular_price>
+    <current_price>38.86€</current_price>
+    <availability>in stock</availability>
+    <stock>2</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/animatch</product_url>
+    <description>&lt;h2 data-mce-fragment=&quot;1&quot;&gt;Animatch&lt;/h2&gt;
+ &lt;p data-mce-fragment=&quot;1&quot;&gt;Este conjunto de 31 peças variadas irá permitir aos mais novos construir os seus próprios animais divertidos e extravagantes com uma grande variedade de corpos, cabeças, pernas, caudas e cristas.&lt;/p&gt;
+ &lt;p data-mce-fragment=&quot;1&quot;&gt;As várias peças são encaixáveis e a ligação entre as peças é feita através de juntas esféricas. &lt;/p&gt;
+ &lt;p data-mce-fragment=&quot;1&quot;&gt;Os corpos dos animais são constituídos por plástico duro e os restantes componentes por um material mais macio.&lt;/p&gt;
+ &lt;p data-mce-fragment=&quot;1&quot;&gt;Este divertido jogo contribui para o desenvolvimento da imaginação e da destreza manual dos mais novos, auxiliando na introdução de diferentes conceitos geométricos enquanto brincam.&lt;/p&gt;
+ &lt;h2 data-mce-fragment=&quot;1&quot;&gt;Características:&lt;/h2&gt;
+ &lt;ul&gt;
+ &lt;li&gt;
+ &lt;meta charset=&quot;utf-8&quot;&gt;Dimensões: 18 cm;&lt;/li&gt;
+ &lt;li&gt;Idade recomendada: 3 a 6 anos de idade;&lt;/li&gt;
+ &lt;li&gt;Inclui 31 peças encaixáveis.&lt;/li&gt;
+ &lt;/ul&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/animatch.jpg?v=1641381383</image_url>
+    <size>N/A</size>
+    <weight>1.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>N/A</upc_ean>
+    <reference>39180</reference>
+    <brand>Wissner</brand>
+    <category>Mira</category>
+    <designation>Mira refletora</designation>
+    <regular_price>4.82€</regular_price>
+    <current_price>4.82€</current_price>
+    <availability>in stock</availability>
+    <stock>17</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/mira-refletora</product_url>
+    <description>&lt;h1&gt;Mira refletora&lt;/h1&gt;
+&lt;p&gt;Mira refletora indicada para explorar as simetrias de reflexão de diversas figuras. &lt;/p&gt;
+&lt;p&gt;São materiais essenciais para o desenvolvimento de capacidades de visualização associadas à exploração deste tópico.&lt;br&gt;&lt;/p&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/Geometric-Mirror-translucent_1.jpg?v=1681915117</image_url>
+    <size>N/A</size>
+    <weight>1.0 kg</weight>
     <quantiy>1</quantiy>
     <color>N/A</color>
     <aux>N/A</aux>
@@ -32457,7 +32710,7 @@ Medidas: 115 x 165 mm.&lt;/p&gt;
     <regular_price>5.13€</regular_price>
     <current_price>5.13€</current_price>
     <availability>in stock</availability>
-    <stock>5</stock>
+    <stock>3</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -32663,7 +32916,7 @@ Medidas: 115 x 165 mm.&lt;/p&gt;
     <regular_price>3.51€</regular_price>
     <current_price>3.51€</current_price>
     <availability>in stock</availability>
-    <stock>17</stock>
+    <stock>13</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -36070,7 +36323,7 @@ Ferramentas:
     <regular_price>35.90€</regular_price>
     <current_price>35.90€</current_price>
     <availability>in stock</availability>
-    <stock>4</stock>
+    <stock>3</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -36593,7 +36846,7 @@ Certificado pelo CITEVE
     <regular_price>1.75€</regular_price>
     <current_price>1.75€</current_price>
     <availability>in stock</availability>
-    <stock>49</stock>
+    <stock>43</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -38141,11 +38394,45 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <aux>N/A</aux>
   </product>
   <product>
+    <upc_ean>DJD002</upc_ean>
+    <reference>LB0076</reference>
+    <brand>Auxilab, S.L.</brand>
+    <category>Pipeta</category>
+    <designation>Pipeta volumétrica classe A 2 mL</designation>
+    <regular_price>4.01€</regular_price>
+    <current_price>4.01€</current_price>
+    <availability>in stock</availability>
+    <stock>1</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/pipeta-volumetrica-classe-a</product_url>
+    <description>&lt;h1&gt;Pipeta volumétrica classe A&lt;/h1&gt;
+ &lt;p&gt;Pipeta volumétrica classe A, adequado para ser usado por estudantes em contexto laboratorial. &lt;/p&gt;
+ &lt;p&gt;É um utensílio indispensável em qualquer laboratório. Semelhante a um conta-gotas, permite fazer a transferência de pequenas porções de líquidos. &lt;/p&gt;
+ &lt;h2&gt;Características&lt;/h2&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;span&gt;Fabricado em vidro&lt;/span&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;span&gt;Calibradas a 20ºC&lt;/span&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;span&gt;ISO 648&lt;/span&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;span&gt;Tolerância: +/-0,030mL&lt;/span&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;span mce-data-marked=&quot;1&quot;&gt;Várias capacidades&lt;/span&gt;&lt;/li&gt;
+ &lt;/ul&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/pipeta-volumetrica-classe-a.jpg?v=1626451840</image_url>
+    <size>N/A</size>
+    <weight>1.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
     <upc_ean>DJD003</upc_ean>
     <reference>LB0077</reference>
     <brand>Auxilab, S.L.</brand>
     <category>Pipeta</category>
-    <designation>Pipeta volumétrica classe A 5 ml</designation>
+    <designation>Pipeta volumétrica classe A 5 mL</designation>
     <regular_price>4.57€</regular_price>
     <current_price>4.57€</current_price>
     <availability>in stock</availability>
@@ -38179,7 +38466,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <reference>LB0078</reference>
     <brand>Auxilab, S.L.</brand>
     <category>Pipeta</category>
-    <designation>Pipeta volumétrica classe A 10 ml</designation>
+    <designation>Pipeta volumétrica classe A 10 mL</designation>
     <regular_price>4.81€</regular_price>
     <current_price>4.81€</current_price>
     <availability>in stock</availability>
@@ -38213,7 +38500,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <reference>LB0079</reference>
     <brand>Auxilab, S.L.</brand>
     <category>Pipeta</category>
-    <designation>Pipeta volumétrica classe A 20 ml</designation>
+    <designation>Pipeta volumétrica classe A 20 mL</designation>
     <regular_price>6.40€</regular_price>
     <current_price>6.40€</current_price>
     <availability>in stock</availability>
@@ -38247,45 +38534,11 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <reference>LB0080</reference>
     <brand>Auxilab, S.L.</brand>
     <category>Pipeta</category>
-    <designation>Pipeta volumétrica classe A 25 ml</designation>
+    <designation>Pipeta volumétrica classe A 25 mL</designation>
     <regular_price>5.86€</regular_price>
     <current_price>5.86€</current_price>
     <availability>in stock</availability>
     <stock>9</stock>
-    <norma_shipping_cost>4.5 €</norma_shipping_cost>
-    <min_delivery_time>1</min_delivery_time>
-    <max_delivery_time>14</max_delivery_time>
-    <min_preparation_time>1</min_preparation_time>
-    <max_preparation_time>14</max_preparation_time>
-    <product_url>https://abcescolar.pt/products/pipeta-volumetrica-classe-a</product_url>
-    <description>&lt;h1&gt;Pipeta volumétrica classe A&lt;/h1&gt;
- &lt;p&gt;Pipeta volumétrica classe A, adequado para ser usado por estudantes em contexto laboratorial. &lt;/p&gt;
- &lt;p&gt;É um utensílio indispensável em qualquer laboratório. Semelhante a um conta-gotas, permite fazer a transferência de pequenas porções de líquidos. &lt;/p&gt;
- &lt;h2&gt;Características&lt;/h2&gt;
- &lt;ul&gt;
- &lt;li&gt;&lt;span&gt;Fabricado em vidro&lt;/span&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span&gt;Calibradas a 20ºC&lt;/span&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span&gt;ISO 648&lt;/span&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span&gt;Tolerância: +/-0,030mL&lt;/span&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span mce-data-marked=&quot;1&quot;&gt;Várias capacidades&lt;/span&gt;&lt;/li&gt;
- &lt;/ul&gt;</description>
-    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/pipeta-volumetrica-classe-a.jpg?v=1626451840</image_url>
-    <size>N/A</size>
-    <weight>1.0 kg</weight>
-    <quantiy>1</quantiy>
-    <color>N/A</color>
-    <aux>N/A</aux>
-  </product>
-  <product>
-    <upc_ean>DJD002</upc_ean>
-    <reference>LB0076</reference>
-    <brand>Auxilab, S.L.</brand>
-    <category>Pipeta</category>
-    <designation>Pipeta volumétrica classe A 2000 ml</designation>
-    <regular_price>4.01€</regular_price>
-    <current_price>4.01€</current_price>
-    <availability>in stock</availability>
-    <stock>1</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -38972,6 +39225,47 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
   </product>
   <product>
     <upc_ean>N/A</upc_ean>
+    <reference>DV401010</reference>
+    <brand>Castro Electronica, Lda.</brand>
+    <category>Placa de Aquecimento</category>
+    <designation>Placa de aquecimento de 1500W</designation>
+    <regular_price>26.37€</regular_price>
+    <current_price>26.37€</current_price>
+    <availability>in stock</availability>
+    <stock>2</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/placa-de-aquecimento-de-1500-w</product_url>
+    <description>&lt;h1&gt;&lt;strong&gt;Placa de aquecimento de 1500W&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Placa de aquecimento de 1500W apresenta uma proteção contra sobreaquecimento.&lt;/p&gt;
+&lt;p&gt;Destaca-se pelo indicador luminoso de funcionamento e por possuir um termóstato regulável. Placa muito versátil, adequada para utilizações laboratoriais em contexto educativo.&lt;/p&gt;
+&lt;h2&gt;
+&lt;strong&gt;Características&lt;/strong&gt;&lt;br&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Potência: 1500 Watts&lt;/li&gt;
+&lt;li&gt;Placa com 165mm de diâmetro&lt;/li&gt;
+&lt;li&gt;Sistema de segurança com fusível térmico&lt;/li&gt;
+&lt;li&gt;Fácil de utilizar e limpar&lt;/li&gt;
+&lt;li&gt;Compacto e fácil de carregar&lt;/li&gt;
+&lt;li&gt;Temperatura de aquecimento ajustável&lt;/li&gt;
+&lt;li&gt;Com termostato de 5 níveis&lt;/li&gt;
+&lt;li&gt;Pés antiderrapantes&lt;/li&gt;
+&lt;li&gt;Dimensões: : L230 x P235 x A85 (mm) &lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/files/placa-eletrica-disc-inox-1500w.jpg?v=1723048820</image_url>
+    <size>N/A</size>
+    <weight>3.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>N/A</upc_ean>
     <reference>KB0236</reference>
     <brand>Shenzhen KEYES DIY Robot co., Ltd (Keyestudio)</brand>
     <category/>
@@ -39139,7 +39433,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <regular_price>0.37€</regular_price>
     <current_price>0.37€</current_price>
     <availability>in stock</availability>
-    <stock>20</stock>
+    <stock>19</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -39163,7 +39457,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <regular_price>0.37€</regular_price>
     <current_price>0.37€</current_price>
     <availability>in stock</availability>
-    <stock>23</stock>
+    <stock>20</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -39187,7 +39481,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <regular_price>0.37€</regular_price>
     <current_price>0.37€</current_price>
     <availability>in stock</availability>
-    <stock>18</stock>
+    <stock>17</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -39959,7 +40253,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <regular_price>0.44€</regular_price>
     <current_price>0.44€</current_price>
     <availability>in stock</availability>
-    <stock>92</stock>
+    <stock>91</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -41326,6 +41620,38 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <aux>N/A</aux>
   </product>
   <product>
+    <upc_ean>DBJ008</upc_ean>
+    <reference>LB0440</reference>
+    <brand>Auxilab, S.L.</brand>
+    <category>Proveta</category>
+    <designation>Proveta graduada forma em polipropileno 2000 mL</designation>
+    <regular_price>22.88€</regular_price>
+    <current_price>22.88€</current_price>
+    <availability>in stock</availability>
+    <stock>1</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/proveta-graduada-em-polipropileno-1</product_url>
+    <description>&lt;h1&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Proveta graduada forma em polipropileno&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Proveta graduada em polipropileno, é um elemento indispensável para o trabalho diário de laboratório, para preparação de soluções ou de volumes de todo o tipo de líquidos. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Possui uma base hexagonal que oferece uma maior estabilidade.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Características&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Foi calibrada a 20º mediante ajuste de conteúdo (IN). &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Fabricada segundo a norma ISO 4788. &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Fabricada em polipropileno&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;&lt;span style=&quot;vertical-align: inherit;&quot;&gt;Várias capacidades disponíveis&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/proveta-graduada-em-polipropileno-250.jpg?v=1626452719</image_url>
+    <size>N/A</size>
+    <weight>1.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
     <upc_ean>NS2171</upc_ean>
     <reference>NS2171</reference>
     <brand>Nowa Szkola</brand>
@@ -42011,7 +42337,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <regular_price>9.51€</regular_price>
     <current_price>9.51€</current_price>
     <availability>in stock</availability>
-    <stock>5</stock>
+    <stock>2</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -42061,7 +42387,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <regular_price>6.74€</regular_price>
     <current_price>6.74€</current_price>
     <availability>in stock</availability>
-    <stock>4</stock>
+    <stock>3</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -43010,7 +43336,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <regular_price>0.05€</regular_price>
     <current_price>0.05€</current_price>
     <availability>in stock</availability>
-    <stock>255</stock>
+    <stock>254</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -43693,7 +44019,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <regular_price>60.14€</regular_price>
     <current_price>60.14€</current_price>
     <availability>in stock</availability>
-    <stock>4</stock>
+    <stock>2</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -43736,10 +44062,56 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <brand>Nowa Szkola</brand>
     <category>Roupa</category>
     <designation>Roupa de cama para catre Kiddy (várias cores) Rosa Real</designation>
-    <regular_price>55.73€</regular_price>
-    <current_price>55.73€</current_price>
+    <regular_price>60.14€</regular_price>
+    <current_price>60.14€</current_price>
     <availability>in stock</availability>
     <stock>6</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/roupa-de-cama-para-catre-kiddy</product_url>
+    <description>&lt;h2&gt;Roupa de cama para catre Kiddy (várias cores)&lt;/h2&gt;
+&lt;p&gt;Roupa de cama para catre Kiddy conjunto em algodão em tons pastel fabricado com material de alta qualidade.&lt;/p&gt;
+&lt;p&gt;Adaptado ao tamanho do catre Kiddy que pode encontrar aqui.&lt;/p&gt;
+&lt;p&gt;Este conjunto pode ser encontrado na cor azul e rosa e também em azul real e rosa real com um design divertido.&lt;/p&gt;
+&lt;h3&gt;
+&lt;br&gt;&lt;strong&gt;Características&lt;/strong&gt;&lt;br&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Dimensões apropriadas para catre kiddy.&lt;/li&gt;
+&lt;li&gt;Várias cores: rosa, azul, rosa real e azul real.&lt;/li&gt;
+&lt;li&gt;100% algodão&lt;/li&gt;
+&lt;li&gt;Fronha de almofada: 38 x 27 cm&lt;/li&gt;
+&lt;li&gt;Capa de edredão: 110 x 94 cm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;
+&lt;br&gt; &lt;strong&gt;Inclui&lt;/strong&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Almofada&lt;/li&gt;
+&lt;li&gt;Fronha de almofada&lt;/li&gt;
+&lt;li&gt;Edredon e capa&lt;/li&gt;
+&lt;li&gt;Lençol com elásticos&lt;/li&gt;
+&lt;/ul&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/Roupa-de-cama-para-catre-Kiddy-2-pre-escolar-abcescolar-1.jpg?v=1619604141</image_url>
+    <size>N/A</size>
+    <weight>0.5 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>N/A</upc_ean>
+    <reference>NS1644</reference>
+    <brand>Nowa Szkola</brand>
+    <category>Roupa</category>
+    <designation>Roupa de cama para catre Kiddy (várias cores) Rosa</designation>
+    <regular_price>60.14€</regular_price>
+    <current_price>60.14€</current_price>
+    <availability>in stock</availability>
+    <stock>5</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -43836,10 +44208,37 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
   </product>
   <product>
     <upc_ean>N/A</upc_ean>
+    <reference>FH01.ES 7035.T 164.O FAIA</reference>
+    <brand>Mobapec - Mobiliário Escolar, Lda.</brand>
+    <category>Mesa, mesa escolar</category>
+    <designation>Secretária professor Cinza claro X Faia</designation>
+    <regular_price>264.23€</regular_price>
+    <current_price>264.23€</current_price>
+    <availability>in stock</availability>
+    <stock>3</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/secretaria-professor-c-1200x600x740mm-cinza-clarcremefaia</product_url>
+    <description>&lt;p&gt;A Secretária para Professor é uma peça de mobiliário funcional e elegante, desenhada para se adaptar a qualquer ambiente educativo. Construída com materiais de alta qualidade, oferece durabilidade e resistência, adequada para o uso diário intensivo. O tampo espaçoso proporciona uma área de trabalho ampla, ideal para acomodar computadores, livros e materiais didáticos, enquanto as opções de cores permitem uma integração harmoniosa com diferentes decorações de interiores.&lt;/p&gt;
+&lt;p&gt;A altura de 74 cm garante conforto durante longos períodos de uso, e a largura de 120 cm é suficiente para uma organização eficiente do espaço de trabalho. Este móvel é uma escolha excelente para professores que procuram uma secretária prática, robusta e com uma estética agradável, capaz de complementar perfeitamente a sala de aula.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;*imagem meramente ilustrativa&lt;/strong&gt;&lt;/p&gt;
+&lt;!----&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/files/secretaria-professor_800x_68505551-2adc-4cab-93c4-49241d327067.webp?v=1723045964</image_url>
+    <size>N/A</size>
+    <weight>0.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>N/A</upc_ean>
     <reference>NUL-232</reference>
     <brand>Eisco Scientific LLC</brand>
     <category>Sensor</category>
-    <designation>Sensor comprimento de onda UVA</designation>
+    <designation>Sensor comprimento de onda UVA Neulog</designation>
     <regular_price>169.50€</regular_price>
     <current_price>169.50€</current_price>
     <availability>in stock</availability>
@@ -43937,7 +44336,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <reference>NUL-202</reference>
     <brand>Eisco Scientific LLC</brand>
     <category>Sensor</category>
-    <designation>Sensor de corrente (Amp)</designation>
+    <designation>Sensor de corrente (Amp) Neulog</designation>
     <regular_price>94.34€</regular_price>
     <current_price>94.34€</current_price>
     <availability>in stock</availability>
@@ -43974,7 +44373,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <reference>NUL-211</reference>
     <brand>Eisco Scientific LLC</brand>
     <category>Sensor</category>
-    <designation>Sensor de força</designation>
+    <designation>Sensor de força Neulog</designation>
     <regular_price>193.48€</regular_price>
     <current_price>193.48€</current_price>
     <availability>in stock</availability>
@@ -44102,7 +44501,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <reference>NUL-207</reference>
     <brand>Eisco Scientific LLC</brand>
     <category>Sensor</category>
-    <designation>Sensor de humidade</designation>
+    <designation>Sensor de humidade Neulog</designation>
     <regular_price>110.33€</regular_price>
     <current_price>110.33€</current_price>
     <availability>in stock</availability>
@@ -44137,7 +44536,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <reference>NUL-229</reference>
     <brand>Eisco Scientific LLC</brand>
     <category>Sensor</category>
-    <designation>Sensor de humidade no solo</designation>
+    <designation>Sensor de humidade no solo Neulog</designation>
     <regular_price>139.01€</regular_price>
     <current_price>139.01€</current_price>
     <availability>in stock</availability>
@@ -44190,7 +44589,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <reference>NUL-204</reference>
     <brand>Eisco Scientific LLC</brand>
     <category>Sensor</category>
-    <designation>Sensor de luz</designation>
+    <designation>Sensor de luz Neulog</designation>
     <regular_price>100.37€</regular_price>
     <current_price>100.37€</current_price>
     <availability>in stock</availability>
@@ -44261,7 +44660,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <reference>NUL-205</reference>
     <brand>Eisco Scientific LLC</brand>
     <category>Sensor</category>
-    <designation>Sensor de oxigénio Neulog</designation>
+    <designation>Sensor de oxigénio Neulog Neulog</designation>
     <regular_price>318.20€</regular_price>
     <current_price>318.20€</current_price>
     <availability>in stock</availability>
@@ -44297,7 +44696,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <reference>NUL-206</reference>
     <brand>Eisco Scientific LLC</brand>
     <category>Sensor</category>
-    <designation>Sensor de pH</designation>
+    <designation>Sensor de pH Neulog</designation>
     <regular_price>163.10€</regular_price>
     <current_price>163.10€</current_price>
     <availability>in stock</availability>
@@ -44356,38 +44755,10 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
   </product>
   <product>
     <upc_ean>N/A</upc_ean>
-    <reference>NUL-210</reference>
-    <brand>Eisco Scientific LLC</brand>
-    <category>Sensor</category>
-    <designation>Sensor de pressão</designation>
-    <regular_price>164.59€</regular_price>
-    <current_price>164.59€</current_price>
-    <availability>in stock</availability>
-    <stock>1</stock>
-    <norma_shipping_cost>4.5 €</norma_shipping_cost>
-    <min_delivery_time>1</min_delivery_time>
-    <max_delivery_time>14</max_delivery_time>
-    <min_preparation_time>1</min_preparation_time>
-    <max_preparation_time>14</max_preparation_time>
-    <product_url>https://abcescolar.pt/products/sensor-de-pressao</product_url>
-    <description>&lt;h2&gt;&lt;span&gt;Sensor de pressão&lt;/span&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;span&gt;Este sensor pode ser usado para monitorar reações químicas que envolvem gases e investigar tanto a Lei de Boyle quanto a Lei de Gay-Lussac para gases ideais.&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;Também pode ser útil em estudos de fenômenos climáticos e fermentação de leveduras.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;O sensor de pressão está localizado em uma caixa plástica.&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;A parte do sensor é conectada a um tubo plástico para conexão a fontes de pressão, como uma seringa, por meio de um adaptador.&lt;/span&gt;&lt;/p&gt;</description>
-    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/Sensor-de-pressao-fisica-abc-escolar.jpg?v=1619608059</image_url>
-    <size>N/A</size>
-    <weight>0.5 kg</weight>
-    <quantiy>1</quantiy>
-    <color>N/A</color>
-    <aux>N/A</aux>
-  </product>
-  <product>
-    <upc_ean>N/A</upc_ean>
     <reference>NUL-237</reference>
     <brand>Eisco Scientific LLC</brand>
     <category>Sensor</category>
-    <designation>Sensor de pressão de mão</designation>
+    <designation>Sensor de pressão de mão Neulog</designation>
     <regular_price>223.87€</regular_price>
     <current_price>223.87€</current_price>
     <availability>in stock</availability>
@@ -44436,6 +44807,34 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <aux>N/A</aux>
   </product>
   <product>
+    <upc_ean>N/A</upc_ean>
+    <reference>NUL-210</reference>
+    <brand>Eisco Scientific LLC</brand>
+    <category>Sensor</category>
+    <designation>Sensor de pressão Neulog</designation>
+    <regular_price>164.59€</regular_price>
+    <current_price>164.59€</current_price>
+    <availability>in stock</availability>
+    <stock>1</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/sensor-de-pressao</product_url>
+    <description>&lt;h2&gt;&lt;span&gt;Sensor de pressão&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span&gt;Este sensor pode ser usado para monitorar reações químicas que envolvem gases e investigar tanto a Lei de Boyle quanto a Lei de Gay-Lussac para gases ideais.&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;Também pode ser útil em estudos de fenômenos climáticos e fermentação de leveduras.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;O sensor de pressão está localizado em uma caixa plástica.&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;A parte do sensor é conectada a um tubo plástico para conexão a fontes de pressão, como uma seringa, por meio de um adaptador.&lt;/span&gt;&lt;/p&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/Sensor-de-pressao-fisica-abc-escolar.jpg?v=1619608059</image_url>
+    <size>N/A</size>
+    <weight>0.5 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
     <upc_ean>KS0458</upc_ean>
     <reference>KS0458</reference>
     <brand>Shenzhen KEYES DIY Robot co., Ltd (Keyestudio)</brand>
@@ -44471,7 +44870,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <reference>NUL-212</reference>
     <brand>Eisco Scientific LLC</brand>
     <category>Sensor</category>
-    <designation>Sensor de som</designation>
+    <designation>Sensor de som Neulog</designation>
     <regular_price>100.74€</regular_price>
     <current_price>100.74€</current_price>
     <availability>in stock</availability>
@@ -44907,7 +45306,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <reference>NUL-209</reference>
     <brand>Eisco Scientific LLC</brand>
     <category>Sensor</category>
-    <designation>Sensor Photogate</designation>
+    <designation>Sensor Photogate Neulog</designation>
     <regular_price>107.13€</regular_price>
     <current_price>107.13€</current_price>
     <availability>in stock</availability>
@@ -46863,7 +47262,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <regular_price>13.93€</regular_price>
     <current_price>13.93€</current_price>
     <availability>in stock</availability>
-    <stock>5</stock>
+    <stock>1</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -46891,7 +47290,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <regular_price>13.93€</regular_price>
     <current_price>13.93€</current_price>
     <availability>in stock</availability>
-    <stock>4</stock>
+    <stock>2</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -47363,10 +47762,10 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
   </product>
   <product>
     <upc_ean>SD017.500G</upc_ean>
-    <reference>141270.1210</reference>
+    <reference>SD017.500G</reference>
     <brand>Sordalab</brand>
     <category>Sulfato</category>
-    <designation>Sulfato de cobre II (5H2O) 500g</designation>
+    <designation>Sulfato de cobre (5H2O) 500g</designation>
     <regular_price>20.50€</regular_price>
     <current_price>20.50€</current_price>
     <availability>in stock</availability>
@@ -47391,41 +47790,6 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/woocommerce-placeholder_338558ef-1aa4-4852-9b43-13196d33379b.png?v=1619619702</image_url>
     <size>N/A</size>
     <weight>5.0 kg</weight>
-    <quantiy>1</quantiy>
-    <color>N/A</color>
-    <aux>N/A</aux>
-  </product>
-  <product>
-    <upc_ean>SR295.500G</upc_ean>
-    <reference>141716.1210</reference>
-    <brand>Sordalab</brand>
-    <category>Sulfato</category>
-    <designation>Sulfato de sódio anidro 500g</designation>
-    <regular_price>8.09€</regular_price>
-    <current_price>8.09€</current_price>
-    <availability>in stock</availability>
-    <stock>1</stock>
-    <norma_shipping_cost>4.5 €</norma_shipping_cost>
-    <min_delivery_time>1</min_delivery_time>
-    <max_delivery_time>14</max_delivery_time>
-    <min_preparation_time>1</min_preparation_time>
-    <max_preparation_time>14</max_preparation_time>
-    <product_url>https://abcescolar.pt/products/sulfato-sodio-anidro</product_url>
-    <description>&lt;p&gt;Fórmula : Na&lt;sub&gt;2&lt;/sub&gt;SO&lt;sub&gt;4&lt;/sub&gt;&lt;br&gt;
-  Peso molecular : 142, 04 g/mol&lt;br&gt;
-  Número CAS : 7757-82-6&lt;br&gt;
-  Número CE : 231-820-9&lt;/p&gt;
-  
-  &lt;p&gt;Especificação :&lt;br&gt;
-  Aspecto : cristaux blancs&lt;br&gt;
-  Pureza mínima : 99%&lt;br&gt;
-  Ponto de fusão : 884°C&lt;br&gt;
-  Ponto de ebulição : &amp;gt;1700°C - dec.&lt;br&gt;
-  Densidade : 2, 700 g/cm3 à 20°C&lt;br&gt;
-  Solubilidade em H2O : 200 g/L (20°C)&lt;/p&gt;</description>
-    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/woocommerce-placeholder_9f81b982-8346-486c-a451-ab65b44780f8.png?v=1619617730</image_url>
-    <size>N/A</size>
-    <weight>1.0 kg</weight>
     <quantiy>1</quantiy>
     <color>N/A</color>
     <aux>N/A</aux>
@@ -48693,33 +49057,6 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <aux>N/A</aux>
   </product>
   <product>
-    <upc_ean>KJM003</upc_ean>
-    <reference>LB0243</reference>
-    <brand>Auxilab, S.L.</brand>
-    <category>Termómetro</category>
-    <designation>Termómetro ambiente em madeira</designation>
-    <regular_price>2.41€</regular_price>
-    <current_price>2.41€</current_price>
-    <availability>in stock</availability>
-    <stock>1</stock>
-    <norma_shipping_cost>4.5 €</norma_shipping_cost>
-    <min_delivery_time>1</min_delivery_time>
-    <max_delivery_time>14</max_delivery_time>
-    <min_preparation_time>1</min_preparation_time>
-    <max_preparation_time>14</max_preparation_time>
-    <product_url>https://abcescolar.pt/products/termometro-ambiente-madeira</product_url>
-    <description>&lt;h1&gt;Termómetro ambiente em madeira &lt;/h1&gt;
- &lt;p&gt;Termómetro ambiente em madeira, especialmente indicado para medição da temperatura tanto em ambientes interiores como exteriores.&lt;/p&gt;
- &lt;p&gt;Especialmente adequado para ser usado por estudantes em contexto laboratorial.&lt;/p&gt;
- &lt;p&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span&gt;Intervalo:&lt;/span&gt;&lt;br&gt;&lt;span&gt;* -40/50 ºC&lt;/span&gt;&lt;br&gt;&lt;span&gt;* -40/120 ºF&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</description>
-    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/termometro-ambiente-madeira.jpg?v=1627663362</image_url>
-    <size>N/A</size>
-    <weight>1.0 kg</weight>
-    <quantiy>1</quantiy>
-    <color>N/A</color>
-    <aux>N/A</aux>
-  </product>
-  <product>
     <upc_ean>N/A</upc_ean>
     <reference>PH0250A</reference>
     <brand>EISCO - Electronic Instrumentation</brand>
@@ -48788,7 +49125,7 @@ Dimensões: 56 mm de comprimento.&lt;/p&gt;</description>
     <regular_price>8.07€</regular_price>
     <current_price>8.07€</current_price>
     <availability>in stock</availability>
-    <stock>9</stock>
+    <stock>7</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -50192,7 +50529,7 @@ Tubo de recolha para voltâmetro&lt;/p&gt;</description>
     <regular_price>1.06€</regular_price>
     <current_price>1.06€</current_price>
     <availability>in stock</availability>
-    <stock>34</stock>
+    <stock>8</stock>
     <norma_shipping_cost>4.5 €</norma_shipping_cost>
     <min_delivery_time>1</min_delivery_time>
     <max_delivery_time>14</max_delivery_time>
@@ -50272,6 +50609,41 @@ Tubo de recolha para voltâmetro&lt;/p&gt;</description>
  &lt;li&gt;72 unidades&lt;/li&gt;
  &lt;/ul&gt;</description>
     <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/veiculos-de-transporte-para-triagem-72-unidades.jpg?v=1629198427</image_url>
+    <size>N/A</size>
+    <weight>1.0 kg</weight>
+    <quantiy>1</quantiy>
+    <color>N/A</color>
+    <aux>N/A</aux>
+  </product>
+  <product>
+    <upc_ean>N/A</upc_ean>
+    <reference>124058</reference>
+    <brand>Opitec España S.L.</brand>
+    <category>Ventoinha</category>
+    <designation>Ventoinha solar</designation>
+    <regular_price>8.66€</regular_price>
+    <current_price>8.66€</current_price>
+    <availability>in stock</availability>
+    <stock>1</stock>
+    <norma_shipping_cost>4.5 €</norma_shipping_cost>
+    <min_delivery_time>1</min_delivery_time>
+    <max_delivery_time>14</max_delivery_time>
+    <min_preparation_time>1</min_preparation_time>
+    <max_preparation_time>14</max_preparation_time>
+    <product_url>https://abcescolar.pt/products/ventoinha-solar</product_url>
+    <description>&lt;p&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;Este ventilador solar, ilustra de uma forma simples a transformação da energia solar em energia elétrica. Quando os raios de sol iluminam diretamente a célula solar de 400 mA ligada ao motor solar RF300 aciona a hélice e a faz girar.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;Com instruções detalhadas e informações suplementares sobre a energia solar.&lt;/span&gt;&lt;br data-mce-fragment=&quot;1&quot;&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;&lt;strong&gt;Dimensões:&lt;/strong&gt; 80 x 73 x 115 mm&lt;/span&gt;&lt;br data-mce-fragment=&quot;1&quot;&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Materiais fornecidos:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1 Folha de metacrilato: 3 x 80 x 115 mm / 3 x 80 x 110 mm&lt;br&gt;1 Contraplacado de madeira: 10 x 70 x 80 mm&lt;br&gt;1 Motor solar&lt;br&gt;1 Hélice já montada&lt;br&gt;1 Célula solar de 400 mA&lt;br&gt;2 Parafusos de cabeça cilíndrica de 3 x 16 mm&lt;br&gt;2 Tachinhas&lt;br&gt;1 Cabo elétrico 50 cm&lt;/p&gt;
+&lt;p&gt;&lt;img data-mce-fragment=&quot;1&quot; alt=&quot;&quot; src=&quot;https://cdn.shopify.com/s/files/1/0555/4277/5963/files/ventoinha-solar-conteudo.png?v=1637001671&quot; data-mce-src=&quot;https://cdn.shopify.com/s/files/1/0555/4277/5963/files/ventoinha-solar-conteudo.png?v=1637001671&quot;&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;&lt;strong&gt;Idade aconselhada:&lt;/strong&gt; +12 anos&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span data-mce-fragment=&quot;1&quot;&gt;&lt;strong&gt;Tempo de construção:&lt;/strong&gt; 5-6 horas&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Construções a realizar com as ferramentas:&lt;/strong&gt;&lt;img data-mce-fragment=&quot;1&quot; height=&quot;75&quot; width=&quot;444&quot; alt=&quot;&quot; src=&quot;https://cdn.shopify.com/s/files/1/0555/4277/5963/files/5.png?v=1636999279&quot; data-mce-src=&quot;https://cdn.shopify.com/s/files/1/0555/4277/5963/files/5.png?v=1636999279&quot;&gt;&lt;/p&gt;
+&lt;p&gt; &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/H31YIfCyMTk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;</description>
+    <image_url>https://cdn.shopify.com/s/files/1/0555/4277/5963/products/kit-ventilador-solar4_e0ed8645-f880-4494-8704-d2d59909a38f.jpg?v=1637000306</image_url>
     <size>N/A</size>
     <weight>1.0 kg</weight>
     <quantiy>1</quantiy>
