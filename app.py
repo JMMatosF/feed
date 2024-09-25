@@ -11,7 +11,7 @@ import re
 from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom import minidom
 from bs4 import BeautifulSoup
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 
 # Função para obter informações da próxima página
 def get_next_page_info(response):
@@ -252,7 +252,8 @@ def generate_xml_from_csv(csv_filename, xml_filename):
 
 
 def generate_idealo_csv_from_products(csv_filename, idealo_csv_filename):
-    translator = Translator()
+    translator = GoogleTranslator(source='pt', target='es')
+
     with open(csv_filename, mode='r', encoding='utf-8') as csvfile:
         csv_reader = csv.DictReader(csvfile)
         fieldnames = [
@@ -272,39 +273,55 @@ def generate_idealo_csv_from_products(csv_filename, idealo_csv_filename):
 
             for row in csv_reader:
                 if str(row['Status']) == 'active' and int(row['Availability']) > 0:
-                    translated_name = translator.translate(row['Title'], src='pt', dest='es').text
+                    try:
+                        # Tentando traduzir o nome do produto
+                        print(f"Traduzindo: {row['Title']}")
+                        translated_name = translator.translate(row['Title'])
+                        print(f"Nome traduzido: {translated_name}")
+                    except requests.exceptions.RequestException as e:
+                        # Lidar com o erro de conexão, manter o nome original se falhar
+                        print(f"Erro ao traduzir o nome do produto '{row['Title']}': {str(e)}")
+                        translated_name = row['Title']  # Usar o nome original em caso de falha
+                    except Exception as e:
+                        # Lidar com qualquer outro tipo de exceção
+                        print(f"Erro inesperado ao traduzir o nome do produto '{row['Title']}': {str(e)}")
+                        translated_name = row['Title']  # Usar o nome original em caso de falha
+
+                    print("Escrevendo linha no CSV...")  # Depuração para ver se continua
                     csv_writer.writerow({
                         'N° artículo en tienda': row['Variant SKU'],
                         'EAN / GTIN / código barras': row['Barcode'],
                         'Número del fabricante (HAN/MPN)': row['Variant SKU'],
                         'Fabricante / Marca': row['Vendor'],
-                        'Nombre del producto': translated_name,
+                        'Nombre del producto': translated_name,  # Nome traduzido ou original
                         'Precio': row['Variant Price'],
-                        'Precio especial': '',  # Adicione a lógica necessária se houver preço especial
+                        'Precio especial': '',
                         'Precio original': row['Variant Price'],
                         'Plazo de entrega': f"{row['Min_delivery_time']} - {row['Max_delivery_time']} días",
                         'Categoría del producto en la tienda': row['Type'],
                         'Descripción del producto': row['Description'],
-                        'Características del producto / Otros atributos': row['Tags'],  # Assumindo que as tags são atributos
-                        'URL del producto': f"https://abcescolar.pt/es/products/{row['Handle']}",
+                        'Características del producto / Otros atributos': '',
+                        'URL del producto': f"https://abcescolar.pt/en/products/{row['Handle']}",
                         'URLimagen_1': row['Image'],
-                        'URLimagen_2': '',  # Adicione a lógica necessária se houver imagens adicionais
-                        'URLimagen_3': '',  # Adicione a lógica necessária se houver imagens adicionais
-                        'Color': '',  # Adicione a lógica necessária se houver informações de cor
+                        'URLimagen_2': '',
+                        'URLimagen_3': '',
+                        'Color': '',
                         'Talla': row['Size'],
-                        'Transferencia': '',  # Adicione a lógica necessária se houver informações de transferência
-                        'Transferencia / Paypal Austria': '',  # Adicione a lógica necessária se houver informações de transferência/Paypal
-                        'Tarjeta de crédito': '',  # Adicione a lógica necessária se houver informações de cartão de crédito
-                        'Paypal': '',  # Adicione a lógica necessária se houver informações de Paypal
-                        'Sofortüberweisung': '',  # Adicione a lógica necessária se houver informações de Sofortüberweisung
-                        'Domiciliación': '',  # Adicione a lógica necessária se houver informações de domiciliación
-                        'Reembolso': '',  # Adicione a lógica necessária se houver informações de reembolso
+                        'Transferencia': '',
+                        'Transferencia / Paypal Austria': '',
+                        'Tarjeta de crédito': '',
+                        'Paypal': '',
+                        'Sofortüberweisung': '',
+                        'Domiciliación': '',
+                        'Reembolso': '',
                         'Comentario sobre los gastos de envío': row['Shipping_Cost'],
                         'Precio base': row['Variant Price'],
-                        'Cupón de descuento': '',  # Adicione a lógica necessária se houver cupons de desconto
-                        'Clase de eficiencia energética': '',  # Adicione a lógica necessária se houver classe de eficiência energética
+                        'Cupón de descuento': '',
+                        'Clase de eficiencia energética': '',
                         'Unidades': row['Availability']
                     })
+
+            print("Finalizando a geração do arquivo CSV...")  # Depuração para verificar a finalização
 
     print(f"Arquivo CSV '{idealo_csv_filename}' gerado com sucesso.")
 
