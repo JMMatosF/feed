@@ -11,6 +11,7 @@ import re
 from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom import minidom
 from bs4 import BeautifulSoup
+from googletrans import Translator
 
 # Função para obter informações da próxima página
 def get_next_page_info(response):
@@ -249,7 +250,9 @@ def generate_xml_from_csv(csv_filename, xml_filename):
 
     print(f"XML file '{xml_filename}' generated successfully.")
 
+
 def generate_idealo_csv_from_products(csv_filename, idealo_csv_filename):
+    translator = Translator()
     with open(csv_filename, mode='r', encoding='utf-8') as csvfile:
         csv_reader = csv.DictReader(csvfile)
         fieldnames = [
@@ -269,12 +272,13 @@ def generate_idealo_csv_from_products(csv_filename, idealo_csv_filename):
 
             for row in csv_reader:
                 if str(row['Status']) == 'active' and int(row['Availability']) > 0:
+                    translated_name = translator.translate(row['Title'], src='pt', dest='es').text
                     csv_writer.writerow({
                         'N° artículo en tienda': row['Variant SKU'],
                         'EAN / GTIN / código barras': row['Barcode'],
                         'Número del fabricante (HAN/MPN)': row['Variant SKU'],
                         'Fabricante / Marca': row['Vendor'],
-                        'Nombre del producto': row['Title'],
+                        'Nombre del producto': translated_name,
                         'Precio': row['Variant Price'],
                         'Precio especial': '',  # Adicione a lógica necessária se houver preço especial
                         'Precio original': row['Variant Price'],
@@ -282,7 +286,7 @@ def generate_idealo_csv_from_products(csv_filename, idealo_csv_filename):
                         'Categoría del producto en la tienda': row['Type'],
                         'Descripción del producto': row['Description'],
                         'Características del producto / Otros atributos': row['Tags'],  # Assumindo que as tags são atributos
-                        'URL del producto': f"https://abcescolar.pt/en/products/{row['Handle']}",
+                        'URL del producto': f"https://abcescolar.pt/es/products/{row['Handle']}",
                         'URLimagen_1': row['Image'],
                         'URLimagen_2': '',  # Adicione a lógica necessária se houver imagens adicionais
                         'URLimagen_3': '',  # Adicione a lógica necessária se houver imagens adicionais
