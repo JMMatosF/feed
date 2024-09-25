@@ -386,9 +386,9 @@ def atualizar_arquivo_na_shopify(api_key, loja, file_id, file_url, alt_text):
 
 if __name__ == "__main__":
     shop_url = "abc-escolar.myshopify.com"
-    access_token = os.getenv("SHOPIFY_ACCESS_TOKEN")
-    api_key = "2c39bf093b7fd195f0484847a65a2648"
-    password = "537bbbeae234e1a815a43d617e1aa8da"
+    access_token = "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"
+    api_key = "532e586c6a52981c06caa7eeec38ee8c"
+    password = "79686ebe8e57a554f1c0d89ddf8503a5"
     tag = "KuantoKusta"
     csv_filename = "products_by_tag.csv"
     xml_filename = "Feed.xml"
